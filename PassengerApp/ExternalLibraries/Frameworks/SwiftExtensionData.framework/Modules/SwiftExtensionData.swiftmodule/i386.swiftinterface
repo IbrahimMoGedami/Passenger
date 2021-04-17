@@ -1,0 +1,117 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)
+// swift-module-flags: -target i386-apple-ios9.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name SwiftExtensionData
+import CoreLocation
+import CryptoSwift
+import Foundation
+import Swift
+@_exported import SwiftExtensionData
+import UIKit
+@objc public class NetworkHelper : ObjectiveC.NSObject {
+  public typealias CompletionHandlerForNetwork = (Swift.String) -> Swift.Void
+  public static var IS_APP_IN_DEBUG_MODE: Swift.String
+  public static var generalFun: ConfigData.GeneralFun
+  public static var urlRequest: Foundation.NSMutableURLRequest!
+  public static var SYATEM_MAP_ADVANCE_API: Swift.Bool
+  public static func isEncAllowed() -> Swift.Bool
+  public static func call(req: Foundation.NSMutableURLRequest, CompletionHandlerForNetwork: @escaping SwiftExtensionData.NetworkHelper.CompletionHandlerForNetwork) -> Foundation.URLSessionDataTask
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension Double {
+  public func roundTo(places: Swift.Int) -> Swift.Double
+}
+extension String {
+  public func encrypt() -> Swift.String?
+  public func decrypt() -> Swift.String?
+}
+extension Date {
+  public func addedBy(minutes: Swift.Int) -> Foundation.Date
+  public func addedBy(hours: Swift.Int) -> Foundation.Date
+  public func addedBy(months: Swift.Int) -> Foundation.Date
+  public func addedBy(days: Swift.Int) -> Foundation.Date
+  public func addedBy(seconds: Swift.Int) -> Foundation.Date
+}
+extension Data {
+  public var attributedString: Foundation.NSAttributedString? {
+    get
+  }
+}
+extension UINavigationController {
+  public func backToViewController(vc: Swift.AnyClass)
+}
+extension CGRect {
+  public init(_ x: CoreGraphics.CGFloat, _ y: CoreGraphics.CGFloat, _ width: CoreGraphics.CGFloat, _ height: CoreGraphics.CGFloat)
+}
+public enum Model : Swift.String {
+  case simulator, iPod1, iPod2, iPod3, iPod4, iPod5, iPad2, iPad3, iPad4, iPhone4, iPhone4S, iPhone5, iPhone5S, iPhone5C, iPadMini1, iPadMini2, iPadMini3, iPadAir1, iPadAir2, iPhone6, iPhone6plus, iPhone6S, iPhone6Splus, iPhoneSE, iPhone7, iPhone7plus, iPhone8, iPhone8plus, iPhoneX, iPhoneXS, iPhoneXSmax, iPhoneXR, unrecognized
+  public typealias RawValue = Swift.String
+  public init?(rawValue: Swift.String)
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension UIDevice {
+  public var type: SwiftExtensionData.Model {
+    get
+  }
+  public var isSimulator: Swift.Bool {
+    get
+  }
+}
+extension UIScrollView {
+  public func setContentViewSize(offset: CoreGraphics.CGFloat = 0.0)
+  public func setContentViewSize(offset: CoreGraphics.CGFloat = 0.0, currentHeight: CoreGraphics.CGFloat)
+  public func setContentViewSize(offset: CoreGraphics.CGFloat = 0.0, currentMaxHeight: CoreGraphics.CGFloat)
+  public func scrollToTop()
+  public var isAtTop: Swift.Bool {
+    get
+  }
+  public var isAtBottom: Swift.Bool {
+    get
+  }
+  public var verticalOffsetForTop: CoreGraphics.CGFloat {
+    get
+  }
+  public var verticalOffsetForBottom: CoreGraphics.CGFloat {
+    get
+  }
+}
+extension NSDictionary {
+  public func get(_ key: Swift.String) -> Swift.String
+  public func getNsStr(_ key: Swift.String) -> Foundation.NSString
+  public func getObj(_ key: Swift.String) -> Foundation.NSDictionary
+  public func getArrObj(_ key: Swift.String) -> Foundation.NSArray
+  public func isKeyExist(_ key: Swift.String) -> Swift.Bool
+  public func convertToJson() -> Swift.String
+  public func getFloat(_ key: Swift.String) -> Swift.Float
+}
+public class DataHelper {
+  public static let sharedInstance: SwiftExtensionData.DataHelper
+  public init()
+  public func encrypt(input: Swift.String) -> Swift.String?
+  public func decrypt(input: Swift.String) -> Swift.String?
+  @objc deinit
+}
+extension NSMutableData {
+  public func appendString(string: Swift.String)
+}
+extension Array {
+  public func chunked(by chunkSize: Swift.Int) -> [[Element]]
+  public func convertToJson() -> Swift.String
+}
+extension CGPoint {
+  public init(_ x: CoreGraphics.CGFloat, _ y: CoreGraphics.CGFloat)
+}
+extension CGSize {
+  public init(_ width: CoreGraphics.CGFloat, _ height: CoreGraphics.CGFloat)
+}
+extension CLLocation {
+  public func DegreesToRadians(degrees: Swift.Double) -> Swift.Double
+  public func RadiansToDegrees(radians: Swift.Double) -> Swift.Double
+  public func bearingToLocationRadian(destinationLocation: CoreLocation.CLLocation, currentRotation: Swift.Double) -> Swift.Double
+  public func bearingToLocationDegrees(destinationLocation: CoreLocation.CLLocation, currentRotation: Swift.Double) -> Swift.Double
+}
+extension SwiftExtensionData.Model : Swift.Equatable {}
+extension SwiftExtensionData.Model : Swift.Hashable {}
+extension SwiftExtensionData.Model : Swift.RawRepresentable {}

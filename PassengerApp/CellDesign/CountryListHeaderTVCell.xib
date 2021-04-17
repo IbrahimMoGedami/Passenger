@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="9u7-EW-hpe" customClass="CountryListHeaderTVCell" customModule="PassengerApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="424" height="58"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6h5-fc-SjX" customClass="MyLabel" customModule="PassengerApp" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="424" height="58"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <color key="textColor" red="0.18236320540000001" green="0.18416878170000001" blue="0.18416878170000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="paddingRight">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="fontFamilyWeight" value="Medium"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ia-uL-638" customClass="MyLabel" customModule="PassengerApp" customModuleProvider="target">
+                    <rect key="frame" x="424" y="0.0" width="0.0" height="58"/>
+                    <constraints>
+                        <constraint firstAttribute="width" id="pzV-Eh-Cbo"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="paddingRight">
+                            <real key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.93419405359999996" green="0.93419405359999996" blue="0.93419405359999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="5Ia-uL-638" firstAttribute="leading" secondItem="6h5-fc-SjX" secondAttribute="trailing" id="B0a-Fw-Y3G"/>
+                <constraint firstAttribute="bottom" secondItem="6h5-fc-SjX" secondAttribute="bottom" id="FmD-7f-Z8t"/>
+                <constraint firstItem="5Ia-uL-638" firstAttribute="top" secondItem="CFf-GC-zSi" secondAttribute="top" id="IJU-qe-fSL"/>
+                <constraint firstItem="CFf-GC-zSi" firstAttribute="bottom" secondItem="5Ia-uL-638" secondAttribute="bottom" id="Mxs-qy-cty"/>
+                <constraint firstItem="6h5-fc-SjX" firstAttribute="leading" secondItem="9u7-EW-hpe" secondAttribute="leading" id="P6F-Fr-pw9"/>
+                <constraint firstItem="CFf-GC-zSi" firstAttribute="trailing" secondItem="5Ia-uL-638" secondAttribute="trailing" id="ZyN-cl-5M0"/>
+                <constraint firstItem="6h5-fc-SjX" firstAttribute="top" secondItem="9u7-EW-hpe" secondAttribute="top" id="cm7-9G-skJ"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="CFf-GC-zSi"/>
+            <connections>
+                <outlet property="subTitleLbl" destination="5Ia-uL-638" id="6jz-qT-yee"/>
+                <outlet property="titleLbl" destination="6h5-fc-SjX" id="Vnq-lk-VYO"/>
+            </connections>
+            <point key="canvasLocation" x="158.40000000000001" y="-146.62668665667167"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="70" id="W6W-Ji-FEn" customClass="RestaurantDetailTVCell" customModule="PassengerApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="66"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="W6W-Ji-FEn" id="Yo2-PW-1ox">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="65.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ADM-0t-iMJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="59"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="NkT-SZ-hXv" customClass="MyLabel" customModule="PassengerApp" customModuleProvider="target">
+                                <rect key="frame" x="10" y="0.0" width="315" height="59"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isAppThemeTextFont" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontFamilyWeight" value="Medium"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_arrow_down" translatesAutoresizingMaskIntoConstraints="NO" id="vPb-D1-gTZ">
+                                <rect key="frame" x="330" y="12" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="NTG-cu-CaN"/>
+                                    <constraint firstAttribute="height" constant="35" id="jOG-Tz-Ig5"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NkT-SZ-hXv" firstAttribute="leading" secondItem="ADM-0t-iMJ" secondAttribute="leading" constant="10" id="SUe-7P-mV1"/>
+                            <constraint firstAttribute="bottom" secondItem="NkT-SZ-hXv" secondAttribute="bottom" id="WVv-DM-2B5"/>
+                            <constraint firstAttribute="height" constant="59" id="h0y-Pk-c2U"/>
+                            <constraint firstItem="vPb-D1-gTZ" firstAttribute="centerY" secondItem="ADM-0t-iMJ" secondAttribute="centerY" id="j7I-DT-Jx4"/>
+                            <constraint firstItem="NkT-SZ-hXv" firstAttribute="top" secondItem="ADM-0t-iMJ" secondAttribute="top" id="lDf-Wx-TEo"/>
+                            <constraint firstAttribute="trailing" secondItem="vPb-D1-gTZ" secondAttribute="trailing" constant="10" id="unF-xY-FId"/>
+                            <constraint firstItem="vPb-D1-gTZ" firstAttribute="leading" secondItem="NkT-SZ-hXv" secondAttribute="trailing" constant="5" id="vvX-M6-UDl"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" red="0.68047688480964452" green="0.68047688480964452" blue="0.68047688480964452" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                <size key="value" width="-1" height="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="0.80000000000000004"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <real key="value" value="0.80000000000000004"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="ADM-0t-iMJ" firstAttribute="leading" secondItem="Yo2-PW-1ox" secondAttribute="leading" id="XhJ-qu-ckD"/>
+                    <constraint firstAttribute="trailing" secondItem="ADM-0t-iMJ" secondAttribute="trailing" id="mgc-Qx-ZHd"/>
+                    <constraint firstItem="ADM-0t-iMJ" firstAttribute="top" secondItem="Yo2-PW-1ox" secondAttribute="top" id="qaT-Bg-W5v"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="downArrowImgView" destination="vPb-D1-gTZ" id="g5y-cQ-eec"/>
+                <outlet property="headerLbl" destination="NkT-SZ-hXv" id="eye-3h-yuB"/>
+                <outlet property="mainView" destination="ADM-0t-iMJ" id="hYA-Uj-lW5"/>
+            </connections>
+            <point key="canvasLocation" x="-4.5" y="60"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_arrow_down" width="25" height="25"/>
+    </resources>
+</document>

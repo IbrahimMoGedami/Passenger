@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UFXServiceSelectUV" customModule="PassengerApp" customModuleProvider="target">
+            <connections>
+                <outlet property="descriptionViewHeight" destination="a4z-Oh-gHM" id="4TU-GD-5fs"/>
+                <outlet property="moreLbl" destination="euR-ln-vHw" id="fQQ-xt-WQL"/>
+                <outlet property="selectServiceLbl" destination="l74-y9-UHv" id="0k5-vv-HMi"/>
+                <outlet property="ufxCatDescLbl" destination="e1m-dD-gpi" id="qg1-v6-jYV"/>
+                <outlet property="ufxCatDescLblHeight" destination="xp2-1J-z68" id="UNo-RV-sFN"/>
+                <outlet property="ufxCatTitleLbl" destination="bbL-T5-h0O" id="M7R-e4-YD7"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="140"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9TR-Xl-1Np">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbL-T5-h0O" customClass="MyLabel" customModule="PassengerApp" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="10" width="375" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.1529411765" green="0.1529411765" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="paddingRight">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e1m-dD-gpi" customClass="MyLabel" customModule="PassengerApp" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="35.5" width="375" height="18"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="18" id="xp2-1J-z68"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.1529411765" green="0.1529411765" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="paddingRight">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="euR-ln-vHw" customClass="MyLabel" customModule="PassengerApp" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="63.5" width="375" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.1529411765" green="0.1529411765" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="paddingBottom">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="paddingRight">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="bbL-T5-h0O" firstAttribute="leading" secondItem="9TR-Xl-1Np" secondAttribute="leading" id="2XZ-cm-Saa"/>
+                        <constraint firstItem="e1m-dD-gpi" firstAttribute="top" secondItem="bbL-T5-h0O" secondAttribute="bottom" constant="5" id="57h-hb-Pf4"/>
+                        <constraint firstItem="bbL-T5-h0O" firstAttribute="top" secondItem="9TR-Xl-1Np" secondAttribute="top" constant="10" id="Ay0-bX-Yix"/>
+                        <constraint firstAttribute="trailing" secondItem="euR-ln-vHw" secondAttribute="trailing" id="Iew-lT-X3u"/>
+                        <constraint firstItem="euR-ln-vHw" firstAttribute="top" secondItem="e1m-dD-gpi" secondAttribute="bottom" constant="10" id="Jvg-XK-xkf"/>
+                        <constraint firstItem="e1m-dD-gpi" firstAttribute="leading" secondItem="9TR-Xl-1Np" secondAttribute="leading" id="O9N-si-vTn"/>
+                        <constraint firstItem="euR-ln-vHw" firstAttribute="leading" secondItem="9TR-Xl-1Np" secondAttribute="leading" id="Ra5-8z-tJY"/>
+                        <constraint firstAttribute="height" constant="90" id="a4z-Oh-gHM"/>
+                        <constraint firstAttribute="trailing" secondItem="bbL-T5-h0O" secondAttribute="trailing" id="joe-U9-and"/>
+                        <constraint firstAttribute="trailing" secondItem="e1m-dD-gpi" secondAttribute="trailing" id="uJD-vq-dZI"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l74-y9-UHv" customClass="MyLabel" customModule="PassengerApp" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="90" width="375" height="50"/>
+                    <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="lKf-YN-pSh"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="paddingRight">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="9TR-Xl-1Np" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="9Us-N2-TBS"/>
+                <constraint firstItem="9TR-Xl-1Np" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="M3R-Db-yA6"/>
+                <constraint firstItem="l74-y9-UHv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Y9H-f7-9hi"/>
+                <constraint firstAttribute="bottom" secondItem="l74-y9-UHv" secondAttribute="bottom" id="aGP-rc-QM9"/>
+                <constraint firstAttribute="trailing" secondItem="l74-y9-UHv" secondAttribute="trailing" id="leZ-Gd-RIG"/>
+                <constraint firstItem="l74-y9-UHv" firstAttribute="top" secondItem="9TR-Xl-1Np" secondAttribute="bottom" id="sNk-4s-F7I"/>
+                <constraint firstAttribute="trailing" secondItem="9TR-Xl-1Np" secondAttribute="trailing" id="thq-8T-1gS"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="24.5" y="-211"/>
+        </view>
+    </objects>
+</document>

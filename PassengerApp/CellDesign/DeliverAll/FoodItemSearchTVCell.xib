@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FoodItemSearchTVCell" rowHeight="105" id="bRh-Ac-5lM" customClass="FoodItemSearchTVCell" customModule="PassengerApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="105"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bRh-Ac-5lM" id="thQ-qM-FxT">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="104.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="JO9-qw-6X7" customClass="MyLabel" customModule="PassengerApp" customModuleProvider="target">
+                        <rect key="frame" x="10" y="30" width="275" height="14.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="45" id="MYA-HS-Kbi"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.52549019610000003" green="0.52549019610000003" blue="0.52549019610000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="aUo-nY-7Fp" customClass="MarqueeLabel">
+                        <rect key="frame" x="30" y="7" width="335" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="IHf-KY-wZ4"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="fontFamilyWeight" value="Regular"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ex9-O1-WQ1">
+                        <rect key="frame" x="10" y="9" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="15" id="TW3-gG-lxQ"/>
+                            <constraint firstAttribute="height" constant="15" id="Yhm-ig-PKs"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ts0-wq-d1Q">
+                        <rect key="frame" x="290" y="35" width="75" height="55"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="75" id="MeM-XP-XIc"/>
+                            <constraint firstAttribute="height" constant="55" id="ZS8-1S-rh2"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Pe-xe-pm9">
+                        <rect key="frame" x="10" y="103" width="355" height="1"/>
+                        <color key="backgroundColor" red="0.8320274876" green="0.8320274876" blue="0.8320274876" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="u4W-io-gvL"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="nUz-Wb-Afb" customClass="MyLabel" customModule="PassengerApp" customModuleProvider="target">
+                        <rect key="frame" x="10" y="47.5" width="0.0" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="80" id="gAQ-Er-dUr"/>
+                            <constraint firstAttribute="height" constant="21" id="mfp-Ga-Et7"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="fontFamilyWeight" value="Regular"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="EbT-SP-hc1" customClass="MyLabel" customModule="PassengerApp" customModuleProvider="target">
+                        <rect key="frame" x="10" y="47.5" width="0.0" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="80" id="F1J-Z5-Zag"/>
+                            <constraint firstAttribute="height" constant="21" id="UEi-Zl-6o9"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="string" keyPath="fontFamilyWeight" value="Regular"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isAppThemeFont" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="4Pe-xe-pm9" secondAttribute="bottom" constant="0.5" id="0Gd-QZ-frG"/>
+                    <constraint firstItem="EbT-SP-hc1" firstAttribute="top" secondItem="JO9-qw-6X7" secondAttribute="bottom" constant="3" id="66b-CV-Prp"/>
+                    <constraint firstItem="aUo-nY-7Fp" firstAttribute="top" secondItem="thQ-qM-FxT" secondAttribute="top" constant="7" id="BgY-Md-Izb"/>
+                    <constraint firstItem="JO9-qw-6X7" firstAttribute="top" secondItem="aUo-nY-7Fp" secondAttribute="bottom" constant="2" id="D3Y-6m-dFI"/>
+                    <constraint firstItem="4Pe-xe-pm9" firstAttribute="leading" secondItem="thQ-qM-FxT" secondAttribute="leading" constant="10" id="RCa-MB-N2l"/>
+                    <constraint firstItem="aUo-nY-7Fp" firstAttribute="leading" secondItem="Ex9-O1-WQ1" secondAttribute="trailing" constant="5" id="VxQ-fQ-1de"/>
+                    <constraint firstItem="Ex9-O1-WQ1" firstAttribute="leading" secondItem="thQ-qM-FxT" secondAttribute="leading" constant="10" id="XaS-Dx-uav"/>
+                    <constraint firstItem="JO9-qw-6X7" firstAttribute="leading" secondItem="thQ-qM-FxT" secondAttribute="leading" constant="10" id="e1j-o7-Ydc"/>
+                    <constraint firstAttribute="trailing" secondItem="aUo-nY-7Fp" secondAttribute="trailing" constant="10" id="gGt-gJ-ywg"/>
+                    <constraint firstItem="EbT-SP-hc1" firstAttribute="leading" secondItem="nUz-Wb-Afb" secondAttribute="trailing" id="jdL-tb-e8g"/>
+                    <constraint firstAttribute="trailing" secondItem="4Pe-xe-pm9" secondAttribute="trailing" constant="10" id="jjx-k2-PJN"/>
+                    <constraint firstItem="nUz-Wb-Afb" firstAttribute="leading" secondItem="thQ-qM-FxT" secondAttribute="leading" constant="10" id="jxd-ia-rWS"/>
+                    <constraint firstAttribute="trailing" secondItem="ts0-wq-d1Q" secondAttribute="trailing" constant="10" id="kBJ-wC-sYe"/>
+                    <constraint firstItem="ts0-wq-d1Q" firstAttribute="leading" secondItem="JO9-qw-6X7" secondAttribute="trailing" constant="5" id="ki9-xs-KMM"/>
+                    <constraint firstItem="ts0-wq-d1Q" firstAttribute="centerY" secondItem="thQ-qM-FxT" secondAttribute="centerY" constant="10" id="qW8-aK-4AW"/>
+                    <constraint firstItem="nUz-Wb-Afb" firstAttribute="top" secondItem="JO9-qw-6X7" secondAttribute="bottom" constant="3" id="vQN-MM-nZa"/>
+                    <constraint firstItem="Ex9-O1-WQ1" firstAttribute="top" secondItem="thQ-qM-FxT" secondAttribute="top" constant="9" id="yfJ-0M-Qsp"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="discriptionLbl" destination="JO9-qw-6X7" id="1BC-ZV-quj"/>
+                <outlet property="foodItemImgView" destination="ts0-wq-d1Q" id="a9Z-X3-2uz"/>
+                <outlet property="foodTypeImgView" destination="Ex9-O1-WQ1" id="88P-oM-iAl"/>
+                <outlet property="priceLbl" destination="EbT-SP-hc1" id="qgN-Eq-THQ"/>
+                <outlet property="priceLblLeadingSpace" destination="jdL-tb-e8g" id="ISi-xH-CjQ"/>
+                <outlet property="strkeOutLbl" destination="nUz-Wb-Afb" id="dsA-Gs-sEw"/>
+                <outlet property="titleLbl" destination="aUo-nY-7Fp" id="gAx-DJ-NGg"/>
+            </connections>
+            <point key="canvasLocation" x="-72.5" y="-30.5"/>
+        </tableViewCell>
+    </objects>
+</document>

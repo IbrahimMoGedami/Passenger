@@ -1,0 +1,115 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Alamofire",
+        "repositoryURL": "https://github.com/Alamofire/Alamofire",
+        "state": {
+          "branch": null,
+          "revision": "4d19ad82f80cc71ff829b941ded114c56f4f604c",
+          "version": "5.4.2"
+        }
+      },
+      {
+        "package": "LiveChat",
+        "repositoryURL": "https://github.com/livechat/chat-window-ios",
+        "state": {
+          "branch": null,
+          "revision": "ead70dcdbc971b4150a726443b6b1503d7504fd5",
+          "version": "2.0.21"
+        }
+      },
+      {
+        "package": "CreditCardValidator",
+        "repositoryURL": "https://github.com/vitkuzmenko/CreditCardValidator",
+        "state": {
+          "branch": null,
+          "revision": "7c17f79d6ba86c0ec7049e7e5e39226a3f77e359",
+          "version": "0.5.0"
+        }
+      },
+      {
+        "package": "CryptoSwift",
+        "repositoryURL": "https://github.com/krzyzanowskim/CryptoSwift",
+        "state": {
+          "branch": null,
+          "revision": "5669f222e46c8134fb1f399c745fa6882b43532e",
+          "version": "1.3.8"
+        }
+      },
+      {
+        "package": "Facebook",
+        "repositoryURL": "https://github.com/facebook/facebook-ios-sdk",
+        "state": {
+          "branch": null,
+          "revision": "46a0b7416b20d86c36227f439026dc8102d5e7e2",
+          "version": "9.2.0"
+        }
+      },
+      {
+        "package": "HandyJSON",
+        "repositoryURL": "https://github.com/alibaba/HandyJSON",
+        "state": {
+          "branch": null,
+          "revision": "dcf39cf062680ffa4fd0acb7f9117a97755c113f",
+          "version": "5.0.2"
+        }
+      },
+      {
+        "package": "IQKeyboardManagerSwift",
+        "repositoryURL": "https://github.com/hackiftekhar/IQKeyboardManager",
+        "state": {
+          "branch": null,
+          "revision": "4dc6bc7d1c9747bd0c261c8c055903f9fdef91f7",
+          "version": "6.5.6"
+        }
+      },
+      {
+        "package": "NVActivityIndicatorView",
+        "repositoryURL": "https://github.com/ninjaprox/NVActivityIndicatorView",
+        "state": {
+          "branch": null,
+          "revision": "bcb52371f2259254bac6690f92bb474a61768c47",
+          "version": "5.1.1"
+        }
+      },
+      {
+        "package": "Starscream",
+        "repositoryURL": "https://github.com/daltoniam/Starscream",
+        "state": {
+          "branch": null,
+          "revision": "df8d82047f6654d8e4b655d1b1525c64e1059d21",
+          "version": "4.0.4"
+        }
+      },
+      {
+        "package": "Stripe",
+        "repositoryURL": "https://github.com/stripe/stripe-ios",
+        "state": {
+          "branch": null,
+          "revision": "591f54d11f6f60be609e294f7dd7570c0ad32b49",
+          "version": "21.4.0"
+        }
+      },
+      {
+        "package": "PubNub",
+        "repositoryURL": "https://github.com/pubnub/swift",
+        "state": {
+          "branch": null,
+          "revision": "2b82413f1f86768a61e624913f8c4c251f4119d8",
+          "version": "3.1.1"
+        }
+      },
+      {
+        "package": "TOCropViewController",
+        "repositoryURL": "https://github.com/TimOliver/TOCropViewController",
+        "state": {
+          "branch": null,
+          "revision": "dad97167bf1be16aeecd109130900995dd01c515",
+          "version": "2.6.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

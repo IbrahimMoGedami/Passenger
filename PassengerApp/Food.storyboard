@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="9as-tT-4Bk">
+            <objects>
+                <viewController id="qzF-Uo-6fz" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Blb-hq-nmH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bvC-Kg-29j">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="BI2-2Y-Ket">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="857"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="mv8-Op-231">
+                                            <rect key="frame" x="76.5" y="3" width="261" height="18"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bjR-TK-OS2">
+                                                    <rect key="frame" x="0.0" y="0.0" width="18" height="18"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="18" id="bdq-Zd-qvq"/>
+                                                        <constraint firstAttribute="height" constant="18" id="nuQ-EG-rwI"/>
+                                                    </constraints>
+                                                    <state key="normal" image="Arrow - Down 2"/>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="حي الإسكان، شارع الترخيص" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bhs-wR-rkD">
+                                                    <rect key="frame" x="38" y="0.0" width="185" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GvA-EV-xQW">
+                                                    <rect key="frame" x="243" y="0.0" width="18" height="18"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="18" id="29F-nq-hGq"/>
+                                                        <constraint firstAttribute="width" constant="18" id="ZQ0-UP-RaN"/>
+                                                    </constraints>
+                                                    <state key="normal" title="Button" image="location-outline"/>
+                                                </button>
+                                            </subviews>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gKT-G4-4LM">
+                                            <rect key="frame" x="107" y="44" width="294" height="128"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pfv-kd-N3A">
+                                                    <rect key="frame" x="0.0" y="0.0" width="54" height="128"/>
+                                                    <state key="normal" image="Group 32"/>
+                                                </button>
+                                                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z0V-Ij-66f">
+                                                    <rect key="frame" x="54" y="0.0" width="240" height="128"/>
+                                                    <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                                                </view>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <constraints>
+                                        <constraint firstItem="mv8-Op-231" firstAttribute="top" secondItem="BI2-2Y-Ket" secondAttribute="top" constant="3" id="1X9-77-V5B"/>
+                                        <constraint firstItem="mv8-Op-231" firstAttribute="centerX" secondItem="BI2-2Y-Ket" secondAttribute="centerX" id="tCl-Qb-itg"/>
+                                    </constraints>
+                                </view>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="fZk-2n-na6" firstAttribute="bottom" secondItem="bvC-Kg-29j" secondAttribute="bottom" id="2R2-VB-zT6"/>
+                            <constraint firstItem="bvC-Kg-29j" firstAttribute="top" secondItem="fZk-2n-na6" secondAttribute="top" id="EAq-Q5-SaF"/>
+                            <constraint firstItem="fZk-2n-na6" firstAttribute="trailing" secondItem="bvC-Kg-29j" secondAttribute="trailing" id="YoT-bP-sVb"/>
+                            <constraint firstItem="bvC-Kg-29j" firstAttribute="leading" secondItem="fZk-2n-na6" secondAttribute="leading" id="xAi-zE-aNF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fZk-2n-na6"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wwx-1S-ad1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="37.681159420289859" y="98.4375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Arrow - Down 2" width="18" height="18"/>
+        <image name="Group 32" width="54" height="56"/>
+        <image name="location-outline" width="21" height="21"/>
+    </resources>
+</document>

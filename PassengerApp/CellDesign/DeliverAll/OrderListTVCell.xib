@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="OrderListTVCell" rowHeight="299" id="KuZ-6K-cTG" customClass="OrderListTVCell" customModule="CubeGroceryX" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="325"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KuZ-6K-cTG" id="7X6-Oz-zal">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="325"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mOI-dF-oBI">
+                        <rect key="frame" x="15" y="2" width="345" height="300"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="geB-Ck-GlS" customClass="MyLabel" customModule="CubeGroceryX" customModuleProvider="target">
+                                <rect key="frame" x="20" y="20" width="230" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="19" id="jWr-Tx-NEf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontFamilyWeight" value="Semibold"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VdK-lF-SeL" customClass="MyLabel" customModule="CubeGroceryX" customModuleProvider="target">
+                                <rect key="frame" x="287.5" y="49.5" width="37.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontFamilyWeight" value="Semibold"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="13F-Ow-Tpr">
+                                <rect key="frame" x="255" y="17" width="90" height="27.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="aJN-nS-ShW" customClass="MyLabel" customModule="CubeGroceryX" customModuleProvider="target">
+                                        <rect key="frame" x="5" y="0.0" width="80" height="27.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontFamilyWeight" value="Medium"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="aJN-nS-ShW" secondAttribute="bottom" id="4G0-hA-9vo"/>
+                                    <constraint firstItem="aJN-nS-ShW" firstAttribute="top" secondItem="13F-Ow-Tpr" secondAttribute="top" id="Lqd-6K-6TV"/>
+                                    <constraint firstItem="aJN-nS-ShW" firstAttribute="leading" secondItem="13F-Ow-Tpr" secondAttribute="leading" constant="5" id="RBe-B7-1uu"/>
+                                    <constraint firstAttribute="height" constant="27.5" id="RDm-Bc-nHg"/>
+                                    <constraint firstAttribute="trailing" secondItem="aJN-nS-ShW" secondAttribute="trailing" constant="5" id="iYs-BX-u50"/>
+                                    <constraint firstAttribute="width" constant="90" id="qGn-q0-u6X"/>
+                                </constraints>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NiS-Vh-Yhd">
+                                <rect key="frame" x="20" y="46.5" width="46" height="22"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="dbC-kD-5B8" customClass="MarqueeLabel">
+                                        <rect key="frame" x="8" y="0.0" width="30" height="22"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11.5"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="dbC-kD-5B8" secondAttribute="trailing" constant="8" id="8wT-cR-BnD"/>
+                                    <constraint firstItem="dbC-kD-5B8" firstAttribute="top" secondItem="NiS-Vh-Yhd" secondAttribute="top" id="ECg-a6-a4b"/>
+                                    <constraint firstAttribute="height" constant="22" id="MMA-dT-z44"/>
+                                    <constraint firstItem="dbC-kD-5B8" firstAttribute="leading" secondItem="NiS-Vh-Yhd" secondAttribute="leading" constant="8" id="QZP-VH-MWp"/>
+                                    <constraint firstAttribute="bottom" secondItem="dbC-kD-5B8" secondAttribute="bottom" id="Zz5-oZ-xlR"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="120" id="fBK-b1-Bdz"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vOv-tw-NnN" customClass="MyLabel" customModule="CubeGroceryX" customModuleProvider="target">
+                                <rect key="frame" x="22" y="44" width="37.5" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="e1l-dH-XCx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontFamilyWeight" value="Semibold"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OFb-F1-M8r">
+                                <rect key="frame" x="17.5" y="78.5" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="6F3-UW-yyr"/>
+                                    <constraint firstAttribute="height" constant="60" id="W29-p0-l7J"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="MvS-lc-Cwf" customClass="MyLabel" customModule="CubeGroceryX" customModuleProvider="target">
+                                <rect key="frame" x="87.5" y="91" width="237.5" height="86"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.078431372549019607" green="0.078431372549019607" blue="0.078431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isAppThemeFont" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontFamilyWeight" value="Regular"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="48H-4h-6Xc" customClass="MyLabel" customModule="CubeGroceryX" customModuleProvider="target">
+                                <rect key="frame" x="287.5" y="227" width="37.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontFamilyWeight" value="Semibold"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isAppThemeFont" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="AjM-ce-uZB">
+                                <rect key="frame" x="73" y="182" width="252" height="35"/>
+                                <subviews>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k26-mb-XZw">
+                                        <rect key="frame" x="0.0" y="0.0" width="115" height="35"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wj3-vI-NFu" customClass="MyLabel" customModule="CubeGroceryX" customModuleProvider="target">
+                                                <rect key="frame" x="10" y="17.5" width="95" height="0.0"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isAppThemeFont" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Wj3-vI-NFu" firstAttribute="leading" secondItem="k26-mb-XZw" secondAttribute="leading" constant="10" id="EVL-Lu-1ac"/>
+                                            <constraint firstItem="Wj3-vI-NFu" firstAttribute="centerY" secondItem="k26-mb-XZw" secondAttribute="centerY" id="Iqa-8m-KXq"/>
+                                            <constraint firstAttribute="width" constant="115" id="hCG-S9-FHt"/>
+                                            <constraint firstAttribute="trailing" secondItem="Wj3-vI-NFu" secondAttribute="trailing" constant="10" id="w9i-ML-zrG"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                <real key="value" value="14"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isAppTheme" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isAppTheme1" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zNC-Ol-9xD">
+                                        <rect key="frame" x="137" y="0.0" width="115" height="35"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wbr-zt-nfQ" customClass="MyLabel" customModule="CubeGroceryX" customModuleProvider="target">
+                                                <rect key="frame" x="10" y="17.5" width="95" height="0.0"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isAppThemeFont" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="wbr-zt-nfQ" firstAttribute="leading" secondItem="zNC-Ol-9xD" secondAttribute="leading" constant="10" id="DAh-kG-1HW"/>
+                                            <constraint firstItem="wbr-zt-nfQ" firstAttribute="centerY" secondItem="zNC-Ol-9xD" secondAttribute="centerY" id="N4S-Ju-VeO"/>
+                                            <constraint firstAttribute="trailing" secondItem="wbr-zt-nfQ" secondAttribute="trailing" constant="10" id="sZG-Ep-LoO"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                <real key="value" value="14"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isAppTheme" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isAppTheme1" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="IiW-LW-B7j"/>
+                                    <constraint firstItem="k26-mb-XZw" firstAttribute="leading" secondItem="AjM-ce-uZB" secondAttribute="leading" id="x36-2M-ZdI"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kJN-N9-0AO">
+                                <rect key="frame" x="0.0" y="255" width="345" height="1"/>
+                                <color key="backgroundColor" red="0.87058823529411766" green="0.87058823529411766" blue="0.87058823529411766" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="iGl-0m-XPj"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="QbQ-Ap-pXv" customClass="MyLabel" customModule="CubeGroceryX" customModuleProvider="target">
+                                <rect key="frame" x="20" y="265" width="235" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="Ald-hV-dgp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.5725490196078431" green="0.5725490196078431" blue="0.5725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontFamilyWeight" value="Regular"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="6r0-TJ-TIb" customClass="MyLabel" customModule="CubeGroceryX" customModuleProvider="target">
+                                <rect key="frame" x="265" y="265" width="60" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="QIw-Oh-2w1"/>
+                                    <constraint firstAttribute="height" constant="25" id="cAX-pb-h5q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.5725490196078431" green="0.5725490196078431" blue="0.5725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontFamilyWeight" value="Regular"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="AjM-ce-uZB" secondAttribute="trailing" constant="20" id="09I-tm-LPZ"/>
+                            <constraint firstItem="48H-4h-6Xc" firstAttribute="trailing" secondItem="AjM-ce-uZB" secondAttribute="trailing" id="0v4-kx-N7n"/>
+                            <constraint firstItem="MvS-lc-Cwf" firstAttribute="leading" secondItem="OFb-F1-M8r" secondAttribute="trailing" constant="10" id="3Bc-nj-4LT"/>
+                            <constraint firstItem="vOv-tw-NnN" firstAttribute="top" secondItem="geB-Ck-GlS" secondAttribute="bottom" constant="5" id="8Uw-jv-dgV"/>
+                            <constraint firstAttribute="trailing" secondItem="MvS-lc-Cwf" secondAttribute="trailing" constant="20" id="9Ef-jv-q7n"/>
+                            <constraint firstAttribute="trailing" secondItem="VdK-lF-SeL" secondAttribute="trailing" constant="20" id="9lM-l4-bxp"/>
+                            <constraint firstAttribute="trailing" secondItem="13F-Ow-Tpr" secondAttribute="trailing" id="DL5-yd-n0m"/>
+                            <constraint firstAttribute="bottom" secondItem="6r0-TJ-TIb" secondAttribute="bottom" constant="10" id="DyP-jt-Aqc"/>
+                            <constraint firstItem="QbQ-Ap-pXv" firstAttribute="top" secondItem="kJN-N9-0AO" secondAttribute="bottom" constant="9" id="Irp-YX-3QW"/>
+                            <constraint firstItem="13F-Ow-Tpr" firstAttribute="leading" secondItem="geB-Ck-GlS" secondAttribute="trailing" constant="5" id="Lkn-xu-yea"/>
+                            <constraint firstItem="MvS-lc-Cwf" firstAttribute="top" secondItem="geB-Ck-GlS" secondAttribute="bottom" constant="52" id="NrF-Iy-dMT"/>
+                            <constraint firstItem="kJN-N9-0AO" firstAttribute="top" secondItem="48H-4h-6Xc" secondAttribute="bottom" constant="10" id="PqW-H4-sOa"/>
+                            <constraint firstItem="vOv-tw-NnN" firstAttribute="leading" secondItem="mOI-dF-oBI" secondAttribute="leading" constant="22" id="SIN-Js-Tkh"/>
+                            <constraint firstItem="6r0-TJ-TIb" firstAttribute="top" secondItem="QbQ-Ap-pXv" secondAttribute="top" id="T8c-Wc-oOD"/>
+                            <constraint firstAttribute="trailing" secondItem="kJN-N9-0AO" secondAttribute="trailing" id="b06-Im-nFf"/>
+                            <constraint firstItem="NiS-Vh-Yhd" firstAttribute="leading" secondItem="mOI-dF-oBI" secondAttribute="leading" constant="20" id="btU-kc-MWi"/>
+                            <constraint firstItem="QbQ-Ap-pXv" firstAttribute="leading" secondItem="mOI-dF-oBI" secondAttribute="leading" constant="20" id="doH-kt-35G"/>
+                            <constraint firstAttribute="trailing" secondItem="6r0-TJ-TIb" secondAttribute="trailing" constant="20" id="dtv-xH-Pfn"/>
+                            <constraint firstItem="VdK-lF-SeL" firstAttribute="top" secondItem="13F-Ow-Tpr" secondAttribute="bottom" constant="5" id="gyk-hT-WFb"/>
+                            <constraint firstItem="OFb-F1-M8r" firstAttribute="top" secondItem="NiS-Vh-Yhd" secondAttribute="bottom" constant="10" id="hIU-C6-H6i"/>
+                            <constraint firstItem="AjM-ce-uZB" firstAttribute="top" secondItem="MvS-lc-Cwf" secondAttribute="bottom" constant="5" id="ij7-K4-y3r"/>
+                            <constraint firstItem="NiS-Vh-Yhd" firstAttribute="top" secondItem="geB-Ck-GlS" secondAttribute="bottom" constant="7.5" id="jTF-Pt-077"/>
+                            <constraint firstItem="6r0-TJ-TIb" firstAttribute="leading" secondItem="QbQ-Ap-pXv" secondAttribute="trailing" constant="10" id="kiL-rU-3bX"/>
+                            <constraint firstItem="OFb-F1-M8r" firstAttribute="leading" secondItem="mOI-dF-oBI" secondAttribute="leading" constant="17.5" id="me3-Jb-XDP"/>
+                            <constraint firstItem="kJN-N9-0AO" firstAttribute="leading" secondItem="mOI-dF-oBI" secondAttribute="leading" id="o7V-hP-8e6"/>
+                            <constraint firstAttribute="bottom" secondItem="QbQ-Ap-pXv" secondAttribute="bottom" constant="10" id="p7j-0p-wZE"/>
+                            <constraint firstItem="48H-4h-6Xc" firstAttribute="top" secondItem="AjM-ce-uZB" secondAttribute="bottom" constant="10" id="sUj-JT-6KL"/>
+                            <constraint firstItem="geB-Ck-GlS" firstAttribute="top" secondItem="mOI-dF-oBI" secondAttribute="top" constant="20" id="t5A-Za-WwG"/>
+                            <constraint firstItem="geB-Ck-GlS" firstAttribute="leading" secondItem="mOI-dF-oBI" secondAttribute="leading" constant="20" id="xJm-pi-jKk"/>
+                            <constraint firstItem="13F-Ow-Tpr" firstAttribute="top" secondItem="mOI-dF-oBI" secondAttribute="top" constant="17" id="yQg-5d-BvF"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="14"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="mOI-dF-oBI" secondAttribute="trailing" constant="15" id="J33-Fm-Kak"/>
+                    <constraint firstItem="mOI-dF-oBI" firstAttribute="leading" secondItem="7X6-Oz-zal" secondAttribute="leading" constant="15" id="LGV-Ow-Iqq"/>
+                    <constraint firstAttribute="bottom" secondItem="mOI-dF-oBI" secondAttribute="bottom" constant="23" id="VSd-IV-NLd"/>
+                    <constraint firstItem="mOI-dF-oBI" firstAttribute="top" secondItem="7X6-Oz-zal" secondAttribute="top" constant="2" id="bOh-Tg-Tlo"/>
+                </constraints>
+                <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                        <real key="value" value="14"/>
+                    </userDefinedRuntimeAttribute>
+                </userDefinedRuntimeAttributes>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="containerView" destination="mOI-dF-oBI" id="1Oj-9E-AZ0"/>
+                <outlet property="dateLbl" destination="QbQ-Ap-pXv" id="Aay-OY-DkZ"/>
+                <outlet property="detailBtn" destination="k26-mb-XZw" id="foj-Ez-9WN"/>
+                <outlet property="detailLbl" destination="Wj3-vI-NFu" id="1kx-FU-dGL"/>
+                <outlet property="helpBtn" destination="zNC-Ol-9xD" id="Rlv-Zq-tqh"/>
+                <outlet property="helpLbl" destination="wbr-zt-nfQ" id="a4S-W2-AYy"/>
+                <outlet property="orderTypeLbl" destination="dbC-kD-5B8" id="ARR-ug-JHN"/>
+                <outlet property="orderTypeView" destination="NiS-Vh-Yhd" id="VLe-bv-eVh"/>
+                <outlet property="resAddressLbl" destination="MvS-lc-Cwf" id="al3-Yb-Nax"/>
+                <outlet property="resImgView" destination="OFb-F1-M8r" id="Yqw-fb-06r"/>
+                <outlet property="resNameLbl" destination="geB-Ck-GlS" id="3zz-Mn-dVU"/>
+                <outlet property="restOrderNoLbl" destination="VdK-lF-SeL" id="ByG-Rj-YR4"/>
+                <outlet property="singleCatOrderNo" destination="vOv-tw-NnN" id="WKb-0g-rYC"/>
+                <outlet property="statusLbl" destination="aJN-nS-ShW" id="fbF-uF-Cdo"/>
+                <outlet property="statusView" destination="13F-Ow-Tpr" id="SKk-ef-P4S"/>
+                <outlet property="timeVLbl" destination="6r0-TJ-TIb" id="tTi-Vc-mnM"/>
+                <outlet property="totalVLbl" destination="48H-4h-6Xc" id="edV-kt-CTK"/>
+            </connections>
+            <point key="canvasLocation" x="-100.72463768115942" y="-37.834821428571423"/>
+        </tableViewCell>
+    </objects>
+</document>

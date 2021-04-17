@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UFXFilterServicesUV" customModule="PassengerApp" customModuleProvider="target">
+            <connections>
+                <outlet property="nextBtn" destination="kMm-JD-F15" id="xkT-y4-mNt"/>
+                <outlet property="nextBtnBottomSpace" destination="bLj-cI-VpB" id="Xbw-JG-3g3"/>
+                <outlet property="noServiceAvailLbl" destination="e47-Zl-Czh" id="BH5-hL-vCk"/>
+                <outlet property="scrollView" destination="od3-hI-jWm" id="nUu-9r-0aO"/>
+                <outlet property="selectServiceLbl" destination="Wsj-IT-SnK" id="CFg-TM-5MG"/>
+                <outlet property="ufxDataVerticalStackView" destination="z1o-Oo-uBf" id="kmX-GV-A3A"/>
+                <outlet property="ufxDataVerticalStackViewHeight" destination="DMr-8b-zm7" id="on9-jY-eKk"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wsj-IT-SnK" customClass="MyLabel" customModule="PassengerApp" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                    <color key="backgroundColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="b8J-ks-Fec"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="paddingRight">
+                            <real key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                            <real key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="fontFamilyWeight" value="Bold"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="od3-hI-jWm">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="572"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="z1o-Oo-uBf">
+                            <rect key="frame" x="15" y="0.0" width="345" height="250"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="250" id="DMr-8b-zm7"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="z1o-Oo-uBf" secondAttribute="trailing" constant="15" id="Bk5-hz-OWb"/>
+                        <constraint firstItem="z1o-Oo-uBf" firstAttribute="top" secondItem="od3-hI-jWm" secondAttribute="top" id="TTs-Yn-FMu"/>
+                        <constraint firstItem="z1o-Oo-uBf" firstAttribute="leading" secondItem="od3-hI-jWm" secondAttribute="leading" constant="15" id="WJo-dE-B1C"/>
+                        <constraint firstItem="z1o-Oo-uBf" firstAttribute="centerX" secondItem="od3-hI-jWm" secondAttribute="centerX" id="aiM-FD-OJ3"/>
+                    </constraints>
+                </scrollView>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e47-Zl-Czh" customClass="MyLabel" customModule="PassengerApp" customModuleProvider="target">
+                    <rect key="frame" x="168" y="324" width="39.5" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kMm-JD-F15" customClass="MyButton" customModule="PassengerApp" customModuleProvider="target">
+                    <rect key="frame" x="25" y="592" width="325" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="LAh-g8-Qjx"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isAppTheme" value="YES"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isAppTheme1" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="e47-Zl-Czh" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="5t7-rS-3nS"/>
+                <constraint firstItem="Wsj-IT-SnK" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="6Oh-c7-b1U"/>
+                <constraint firstAttribute="trailing" secondItem="kMm-JD-F15" secondAttribute="trailing" constant="25" id="HbY-go-Ciq"/>
+                <constraint firstItem="Wsj-IT-SnK" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="LY9-1V-dNk"/>
+                <constraint firstItem="Wsj-IT-SnK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="UMD-po-mAX"/>
+                <constraint firstAttribute="bottom" secondItem="kMm-JD-F15" secondAttribute="bottom" constant="25" id="bLj-cI-VpB"/>
+                <constraint firstItem="od3-hI-jWm" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="ery-AI-Xvw"/>
+                <constraint firstItem="Wsj-IT-SnK" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ixW-l2-Mtr"/>
+                <constraint firstItem="od3-hI-jWm" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="pt0-XZ-uef"/>
+                <constraint firstItem="Wsj-IT-SnK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="tdf-Tt-fxu"/>
+                <constraint firstItem="Wsj-IT-SnK" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="vTy-3U-XLa"/>
+                <constraint firstItem="e47-Zl-Czh" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="whh-IA-jWA"/>
+                <constraint firstItem="od3-hI-jWm" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="yZK-Zt-hdS"/>
+                <constraint firstItem="kMm-JD-F15" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="25" id="zW7-f4-0MF"/>
+                <constraint firstItem="kMm-JD-F15" firstAttribute="top" secondItem="od3-hI-jWm" secondAttribute="bottom" constant="20" id="zsc-ve-cKw"/>
+            </constraints>
+            <point key="canvasLocation" x="130.40000000000001" y="152.47376311844079"/>
+        </view>
+    </objects>
+</document>

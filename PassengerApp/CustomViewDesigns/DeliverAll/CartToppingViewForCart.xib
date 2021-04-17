@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CartToppingViewForCart">
+            <connections>
+                <outlet property="priceLbl" destination="qk8-6Y-nb4" id="zRb-h2-DcR"/>
+                <outlet property="selctionImgView" destination="uJR-OV-1ZR" id="i08-9z-tPS"/>
+                <outlet property="titleLbl" destination="D26-MR-RTn" id="L99-Ru-Q2y"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="D26-MR-RTn">
+                    <rect key="frame" x="10" y="2.5" width="252" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="3Ei-hR-dH7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uJR-OV-1ZR" customClass="BEMCheckBox">
+                    <rect key="frame" x="345" y="15" width="20" height="20"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="afK-kC-vKx"/>
+                        <constraint firstAttribute="height" constant="20" id="bvm-AY-Z4t"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wv0-I0-mu6">
+                    <rect key="frame" x="0.0" y="49.5" width="375" height="0.5"/>
+                    <color key="backgroundColor" red="0.7843137255" green="0.7843137255" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="aiI-AP-HCh"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="qk8-6Y-nb4">
+                    <rect key="frame" x="267" y="2.5" width="70" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="fDe-ee-dWl"/>
+                        <constraint firstAttribute="width" constant="70" id="viN-J1-fTZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="D26-MR-RTn" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="6a5-KH-Uyq"/>
+                <constraint firstAttribute="bottom" secondItem="wv0-I0-mu6" secondAttribute="bottom" id="8zC-Sv-Aap"/>
+                <constraint firstAttribute="trailing" secondItem="wv0-I0-mu6" secondAttribute="trailing" id="9wP-ej-mCd"/>
+                <constraint firstItem="uJR-OV-1ZR" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="OsC-TS-JHJ"/>
+                <constraint firstItem="D26-MR-RTn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="P9v-U8-2cG"/>
+                <constraint firstItem="qk8-6Y-nb4" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Tar-eY-Djf"/>
+                <constraint firstAttribute="trailing" secondItem="uJR-OV-1ZR" secondAttribute="trailing" constant="10" id="W0Z-Vy-Ewc"/>
+                <constraint firstItem="qk8-6Y-nb4" firstAttribute="leading" secondItem="D26-MR-RTn" secondAttribute="trailing" constant="5" id="Woe-4e-eNN"/>
+                <constraint firstItem="wv0-I0-mu6" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="nYU-4A-JUt"/>
+                <constraint firstItem="uJR-OV-1ZR" firstAttribute="leading" secondItem="qk8-6Y-nb4" secondAttribute="trailing" constant="8" id="xZh-j0-WSr"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="8"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="-44.5" y="48"/>
+        </view>
+    </objects>
+</document>

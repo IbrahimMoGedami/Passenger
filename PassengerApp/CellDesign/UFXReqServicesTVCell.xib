@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="UFXReqServicesTVCell" rowHeight="120" id="YA3-tC-nBb" customClass="UFXReqServicesTVCell" customModule="PassengerApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YA3-tC-nBb" id="5cB-5O-wyc">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="119.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OTQ-tu-8LT">
+                        <rect key="frame" x="15" y="10" width="345" height="104.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tUy-Am-ytR" customClass="MyLabel" customModule="PassengerApp" customModuleProvider="target">
+                                <rect key="frame" x="10" y="10" width="265" height="49.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontFamilyWeight" value="Semibold"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LjV-eh-oXT" customClass="MyLabel" customModule="PassengerApp" customModuleProvider="target">
+                                <rect key="frame" x="10" y="94.5" width="325" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RN5-Tt-fgP" customClass="MyLabel" customModule="PassengerApp" customModuleProvider="target">
+                                <rect key="frame" x="10" y="69.5" width="325" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="Zk1-Ia-Kgi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontFamilyWeight" value="Regular"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isAppThemeFont" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DFl-Xt-voE" customClass="MyLabel" customModule="PassengerApp" customModuleProvider="target">
+                                <rect key="frame" x="280" y="10" width="55" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="y8o-Fi-1FZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontFamilyWeight" value="Regular"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="DFl-Xt-voE" firstAttribute="top" secondItem="OTQ-tu-8LT" secondAttribute="top" constant="10" id="2ly-Ld-UcA"/>
+                            <constraint firstAttribute="trailing" secondItem="tUy-Am-ytR" secondAttribute="trailing" constant="70" id="41T-O6-enX"/>
+                            <constraint firstAttribute="trailing" secondItem="RN5-Tt-fgP" secondAttribute="trailing" constant="10" id="5ZA-91-WIA"/>
+                            <constraint firstItem="tUy-Am-ytR" firstAttribute="top" secondItem="OTQ-tu-8LT" secondAttribute="top" constant="10" id="9MD-x3-Auf"/>
+                            <constraint firstItem="RN5-Tt-fgP" firstAttribute="top" secondItem="tUy-Am-ytR" secondAttribute="bottom" constant="10" id="A8t-T4-gjn"/>
+                            <constraint firstItem="LjV-eh-oXT" firstAttribute="top" secondItem="RN5-Tt-fgP" secondAttribute="bottom" constant="3" id="AGi-fq-1Wn"/>
+                            <constraint firstAttribute="bottom" secondItem="LjV-eh-oXT" secondAttribute="bottom" constant="10" id="LoZ-V7-Hqu"/>
+                            <constraint firstItem="RN5-Tt-fgP" firstAttribute="leading" secondItem="OTQ-tu-8LT" secondAttribute="leading" constant="10" id="PKg-Qc-6hU"/>
+                            <constraint firstItem="DFl-Xt-voE" firstAttribute="leading" secondItem="tUy-Am-ytR" secondAttribute="trailing" constant="5" id="PwI-XY-SgD"/>
+                            <constraint firstItem="tUy-Am-ytR" firstAttribute="leading" secondItem="OTQ-tu-8LT" secondAttribute="leading" constant="10" id="TA2-gb-4sH"/>
+                            <constraint firstAttribute="trailing" secondItem="LjV-eh-oXT" secondAttribute="trailing" constant="10" id="bi1-74-YKM"/>
+                            <constraint firstAttribute="trailing" secondItem="DFl-Xt-voE" secondAttribute="trailing" constant="10" id="iHW-YK-ynh"/>
+                            <constraint firstItem="LjV-eh-oXT" firstAttribute="leading" secondItem="OTQ-tu-8LT" secondAttribute="leading" constant="10" id="s5Y-61-dA3"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                <size key="value" width="1" height="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="OTQ-tu-8LT" secondAttribute="bottom" constant="5" id="Fyn-yL-l1j"/>
+                    <constraint firstAttribute="trailing" secondItem="OTQ-tu-8LT" secondAttribute="trailing" constant="15" id="asw-B4-zkq"/>
+                    <constraint firstItem="OTQ-tu-8LT" firstAttribute="top" secondItem="5cB-5O-wyc" secondAttribute="top" constant="10" id="hY1-Oj-Ojc"/>
+                    <constraint firstItem="OTQ-tu-8LT" firstAttribute="leading" secondItem="5cB-5O-wyc" secondAttribute="leading" constant="15" id="st5-k2-bbN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="serivceDesHbl" destination="RN5-Tt-fgP" id="8jg-tl-byy"/>
+                <outlet property="serviceCountLbl" destination="DFl-Xt-voE" id="KDz-rv-s9o"/>
+                <outlet property="serviceTypeDesLbl" destination="LjV-eh-oXT" id="fDh-j0-6Ku"/>
+                <outlet property="serviceTypeLbl" destination="tUy-Am-ytR" id="pn5-SO-e3d"/>
+            </connections>
+            <point key="canvasLocation" x="-58.399999999999999" y="89.955022488755631"/>
+        </tableViewCell>
+    </objects>
+</document>

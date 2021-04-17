@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FareDetailView" customModule="PassengerApp" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonBgView" destination="iiP-vT-eyb" id="9VZ-Fc-3tO"/>
+                <outlet property="cabTypeImgView" destination="sR3-hB-Ov1" id="jDe-h5-geY"/>
+                <outlet property="cabTypeNameLbl" destination="by4-ma-XEO" id="wLw-tO-hPJ"/>
+                <outlet property="capacituSeparaterView" destination="zee-AA-jnC" id="Tvb-mR-jL0"/>
+                <outlet property="capacityHLbl" destination="dQ2-Tc-IUB" id="PRT-Dw-nIL"/>
+                <outlet property="capacityVLbl" destination="Iqk-X4-xC1" id="axR-mI-aJE"/>
+                <outlet property="capacityViewHeight" destination="dqN-dw-HqM" id="7jt-fm-xpG"/>
+                <outlet property="doneBtn" destination="NZd-3p-R8u" id="wTn-kF-BRA"/>
+                <outlet property="fareHLbl" destination="77d-xT-n2O" id="n8g-vJ-I5i"/>
+                <outlet property="fareVLbl" destination="oa4-aR-KpZ" id="5hP-Vb-1xG"/>
+                <outlet property="moreDetailsLbl" destination="yyu-br-wo8" id="hEd-YI-bXi"/>
+                <outlet property="noteLbl" destination="ili-UG-9kk" id="ldq-dM-BPI"/>
+                <outlet property="rentalInfoLbl" destination="VXm-Tw-SvJ" id="KEq-bD-XTP"/>
+                <outlet property="topFareView" destination="T1S-ZO-nSa" id="27C-LI-mQo"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="lCI-ci-P7k">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="415"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sR3-hB-Ov1">
+                    <rect key="frame" x="147.5" y="15" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="ZAJ-cL-6jB"/>
+                        <constraint firstAttribute="width" constant="80" id="oAE-Ef-jrE"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="by4-ma-XEO" customClass="MyLabel" customModule="PassengerApp" customModuleProvider="target">
+                    <rect key="frame" x="10" y="100" width="355" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="fontFamilyWeight" value="Medium"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gNE-t2-inK">
+                    <rect key="frame" x="5" y="166" width="365" height="65"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iqk-X4-xC1" customClass="MyLabel" customModule="PassengerApp" customModuleProvider="target">
+                            <rect key="frame" x="319.5" y="0.0" width="35.5" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="fontFamilyWeight" value="Regular"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dQ2-Tc-IUB" customClass="MyLabel" customModule="PassengerApp" customModuleProvider="target">
+                            <rect key="frame" x="10" y="0.0" width="35.5" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.3921568627" green="0.3921568627" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="fontFamilyWeight" value="Regular"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zee-AA-jnC">
+                            <rect key="frame" x="10" y="27" width="345" height="1"/>
+                            <color key="backgroundColor" red="0.8862745098" green="0.8862745098" blue="0.8862745098" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="WfF-pl-MPO"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oa4-aR-KpZ" customClass="MyLabel" customModule="PassengerApp" customModuleProvider="target">
+                            <rect key="frame" x="319.5" y="48" width="35.5" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="fontFamilyWeight" value="Regular"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="77d-xT-n2O" customClass="MyLabel" customModule="PassengerApp" customModuleProvider="target">
+                            <rect key="frame" x="10" y="48" width="35.5" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.39215686274509803" green="0.39215686274509803" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="fontFamilyWeight" value="Regular"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="dQ2-Tc-IUB" firstAttribute="top" secondItem="gNE-t2-inK" secondAttribute="top" id="0Eq-bj-fge"/>
+                        <constraint firstAttribute="trailing" secondItem="Iqk-X4-xC1" secondAttribute="trailing" constant="10" id="2dL-vD-GQc"/>
+                        <constraint firstAttribute="bottom" secondItem="oa4-aR-KpZ" secondAttribute="bottom" id="3QC-2U-knp"/>
+                        <constraint firstItem="Iqk-X4-xC1" firstAttribute="top" secondItem="gNE-t2-inK" secondAttribute="top" id="7NZ-AJ-UXr"/>
+                        <constraint firstItem="zee-AA-jnC" firstAttribute="top" secondItem="dQ2-Tc-IUB" secondAttribute="bottom" constant="10" id="7Xq-fk-6Cz"/>
+                        <constraint firstItem="zee-AA-jnC" firstAttribute="leading" secondItem="gNE-t2-inK" secondAttribute="leading" constant="10" id="Fu7-se-DeA"/>
+                        <constraint firstAttribute="trailing" secondItem="oa4-aR-KpZ" secondAttribute="trailing" constant="10" id="IkZ-oS-U0G"/>
+                        <constraint firstItem="dQ2-Tc-IUB" firstAttribute="leading" secondItem="gNE-t2-inK" secondAttribute="leading" constant="10" id="MDS-gi-qPr"/>
+                        <constraint firstAttribute="trailing" secondItem="zee-AA-jnC" secondAttribute="trailing" constant="10" id="T1V-FX-5LN"/>
+                        <constraint firstAttribute="height" constant="65" id="dqN-dw-HqM"/>
+                        <constraint firstItem="77d-xT-n2O" firstAttribute="leading" secondItem="gNE-t2-inK" secondAttribute="leading" constant="10" id="gu9-XE-sQo"/>
+                        <constraint firstAttribute="bottom" secondItem="77d-xT-n2O" secondAttribute="bottom" id="qmp-7N-Syo"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yyu-br-wo8" customClass="MyLabel" customModule="PassengerApp" customModuleProvider="target">
+                    <rect key="frame" x="15" y="261" width="345" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isAppThemeFont" value="YES"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="fontFamilyWeight" value="Medium"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iiP-vT-eyb">
+                    <rect key="frame" x="0.0" y="289" width="375" height="126"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ili-UG-9kk" customClass="MyLabel" customModule="PassengerApp" customModuleProvider="target">
+                    <rect key="frame" x="15" y="309" width="345" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.3921568627" green="0.3921568627" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="fontFamilyWeight" value="Regular"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NZd-3p-R8u" customClass="MyButton" customModule="PassengerApp" customModuleProvider="target">
+                    <rect key="frame" x="15" y="345" width="345" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="lAe-ID-Yog"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isAppTheme" value="YES"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isAppTheme1" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VXm-Tw-SvJ" customClass="MyLabel" customModule="PassengerApp" customModuleProvider="target">
+                    <rect key="frame" x="15" y="130" width="345" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="by4-ma-XEO" firstAttribute="top" secondItem="sR3-hB-Ov1" secondAttribute="bottom" constant="5" id="3ts-Gf-QGY"/>
+                <constraint firstAttribute="bottom" secondItem="iiP-vT-eyb" secondAttribute="bottom" id="8hy-xN-aXt"/>
+                <constraint firstItem="sR3-hB-Ov1" firstAttribute="top" secondItem="lCI-ci-P7k" secondAttribute="top" constant="15" id="H52-LB-QkK"/>
+                <constraint firstAttribute="bottom" secondItem="NZd-3p-R8u" secondAttribute="bottom" constant="20" id="JEs-mD-dnF"/>
+                <constraint firstAttribute="trailing" secondItem="NZd-3p-R8u" secondAttribute="trailing" constant="15" id="Jm4-KN-zgO"/>
+                <constraint firstItem="sR3-hB-Ov1" firstAttribute="centerX" secondItem="lCI-ci-P7k" secondAttribute="centerX" id="KZk-lJ-dl6"/>
+                <constraint firstAttribute="trailing" secondItem="iiP-vT-eyb" secondAttribute="trailing" id="Mqa-Bc-otk"/>
+                <constraint firstItem="by4-ma-XEO" firstAttribute="centerX" secondItem="lCI-ci-P7k" secondAttribute="centerX" id="RAj-pk-dMi"/>
+                <constraint firstAttribute="trailing" secondItem="VXm-Tw-SvJ" secondAttribute="trailing" constant="15" id="RPW-4I-mgk"/>
+                <constraint firstItem="yyu-br-wo8" firstAttribute="leading" secondItem="lCI-ci-P7k" secondAttribute="leading" constant="15" id="Sk6-qF-C8g"/>
+                <constraint firstItem="by4-ma-XEO" firstAttribute="leading" secondItem="lCI-ci-P7k" secondAttribute="leading" constant="10" id="SuI-mW-Dcd"/>
+                <constraint firstItem="gNE-t2-inK" firstAttribute="top" secondItem="by4-ma-XEO" secondAttribute="bottom" constant="48" id="T1S-ZO-nSa"/>
+                <constraint firstItem="ili-UG-9kk" firstAttribute="leading" secondItem="lCI-ci-P7k" secondAttribute="leading" constant="15" id="Tex-4y-N9X"/>
+                <constraint firstItem="gNE-t2-inK" firstAttribute="leading" secondItem="lCI-ci-P7k" secondAttribute="leading" constant="5" id="U6D-Lb-4dO"/>
+                <constraint firstAttribute="trailing" secondItem="gNE-t2-inK" secondAttribute="trailing" constant="5" id="V0E-fP-Q5B"/>
+                <constraint firstAttribute="trailing" secondItem="ili-UG-9kk" secondAttribute="trailing" constant="15" id="VoP-cn-1ie"/>
+                <constraint firstItem="NZd-3p-R8u" firstAttribute="top" secondItem="ili-UG-9kk" secondAttribute="bottom" constant="20" id="Waf-kx-SW2"/>
+                <constraint firstItem="yyu-br-wo8" firstAttribute="top" secondItem="gNE-t2-inK" secondAttribute="bottom" constant="30" id="fYT-VX-M9h"/>
+                <constraint firstItem="NZd-3p-R8u" firstAttribute="leading" secondItem="lCI-ci-P7k" secondAttribute="leading" constant="15" id="hM4-K6-qf8"/>
+                <constraint firstItem="iiP-vT-eyb" firstAttribute="leading" secondItem="lCI-ci-P7k" secondAttribute="leading" id="iDc-0m-Ixv"/>
+                <constraint firstItem="VXm-Tw-SvJ" firstAttribute="top" secondItem="by4-ma-XEO" secondAttribute="bottom" constant="12" id="nd5-hs-5hu"/>
+                <constraint firstItem="iiP-vT-eyb" firstAttribute="top" secondItem="ili-UG-9kk" secondAttribute="top" constant="-20" id="piv-FN-juv"/>
+                <constraint firstAttribute="trailing" secondItem="by4-ma-XEO" secondAttribute="trailing" constant="10" id="pwE-jf-8eM"/>
+                <constraint firstAttribute="trailing" secondItem="yyu-br-wo8" secondAttribute="trailing" constant="15" id="w8Z-4k-IWr"/>
+                <constraint firstItem="VXm-Tw-SvJ" firstAttribute="leading" secondItem="lCI-ci-P7k" secondAttribute="leading" constant="15" id="x0r-e8-AMs"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                    <color key="value" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                    <real key="value" value="0.5"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                    <real key="value" value="5"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="26.399999999999999" y="31.934032983508249"/>
+        </view>
+    </objects>
+</document>

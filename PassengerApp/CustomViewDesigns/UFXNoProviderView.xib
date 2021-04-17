@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UFXNoProviderView" customModule="PassengerApp" customModuleProvider="target">
+            <connections>
+                <outlet property="ufxNoProviderInfoLbl" destination="DbL-zv-a3p" id="gWe-0y-wp6"/>
+                <outlet property="ufxNoProviderView" destination="UJO-TV-x9y" id="R0w-3e-e4m"/>
+                <outlet property="ufxRideLaterBtn" destination="CsY-6f-JlI" id="Hmv-Kd-AJG"/>
+                <outlet property="viewBottomMargin" destination="DhC-ua-5Y3" id="Z8I-9S-Edp"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="165"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UJO-TV-x9y">
+                    <rect key="frame" x="15" y="20" width="345" height="125"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DbL-zv-a3p" customClass="MyLabel" customModule="PassengerApp" customModuleProvider="target">
+                            <rect key="frame" x="10" y="10" width="325" height="19.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" red="0.1529411765" green="0.1529411765" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CsY-6f-JlI" customClass="MyButton" customModule="PassengerApp" customModuleProvider="target">
+                            <rect key="frame" x="10" y="54.5" width="325" height="60"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="P3L-AF-St0"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isAppTheme1" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="DbL-zv-a3p" secondAttribute="trailing" constant="10" id="26S-Eb-C3Z"/>
+                        <constraint firstItem="CsY-6f-JlI" firstAttribute="top" secondItem="DbL-zv-a3p" secondAttribute="bottom" constant="25" id="99S-6l-IGy"/>
+                        <constraint firstItem="DbL-zv-a3p" firstAttribute="top" secondItem="UJO-TV-x9y" secondAttribute="top" constant="10" id="E5A-Dv-Dp1"/>
+                        <constraint firstItem="CsY-6f-JlI" firstAttribute="leading" secondItem="UJO-TV-x9y" secondAttribute="leading" constant="10" id="iVq-9u-5t4"/>
+                        <constraint firstItem="DbL-zv-a3p" firstAttribute="leading" secondItem="UJO-TV-x9y" secondAttribute="leading" constant="10" id="mYm-Ig-54x"/>
+                        <constraint firstAttribute="trailing" secondItem="CsY-6f-JlI" secondAttribute="trailing" constant="10" id="s2k-g7-Egy"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.8980392157" green="0.8980392157" blue="0.90588235289999997" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="UJO-TV-x9y" secondAttribute="bottom" constant="20" id="DhC-ua-5Y3"/>
+                <constraint firstItem="UJO-TV-x9y" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="L11-es-JTd"/>
+                <constraint firstAttribute="trailing" secondItem="UJO-TV-x9y" secondAttribute="trailing" constant="15" id="jST-kU-gup"/>
+                <constraint firstItem="UJO-TV-x9y" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="wfG-dU-eLt"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>

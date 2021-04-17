@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OrderDetailsItemView" customModule="PassengerApp" customModuleProvider="target">
+            <connections>
+                <outlet property="cancelImgView" destination="tVK-ai-BIa" id="0XW-cj-WhH"/>
+                <outlet property="containerView" destination="bib-GC-eRi" id="rTV-tX-9CH"/>
+                <outlet property="imgViewLeadingSpace" destination="pvN-Gf-fTu" id="Iv3-af-D37"/>
+                <outlet property="imgViewWidth" destination="ZSL-iA-gwR" id="Nna-3S-gYW"/>
+                <outlet property="itemCountLbl" destination="ezl-u1-yoX" id="MCe-Z4-A2a"/>
+                <outlet property="itemImgView" destination="Yxp-bB-VCT" id="jm7-96-06w"/>
+                <outlet property="itemLbl" destination="75h-RG-3Au" id="bB5-fa-SxI"/>
+                <outlet property="priceLbl" destination="Lpb-iK-uvT" id="ARd-07-R8b"/>
+                <outlet property="strikeOutLbl" destination="8hj-9Y-Mcd" id="0ci-9P-cN1"/>
+                <outlet property="strikeOutLblTrailMargin" destination="zRA-ha-XdM" id="La2-aQ-4Lj"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="mDC-Zl-rdo">
+            <rect key="frame" x="0.0" y="0.0" width="401" height="110"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bib-GC-eRi">
+                    <rect key="frame" x="0.0" y="0.0" width="401" height="100"/>
+                    <subviews>
+                        <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_right_shape" translatesAutoresizingMaskIntoConstraints="NO" id="5xX-4j-5u6">
+                            <rect key="frame" x="401" y="0.0" width="0.0" height="100"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" id="Ezb-PV-08E"/>
+                            </constraints>
+                        </imageView>
+                        <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_cancel_forgotpass" translatesAutoresizingMaskIntoConstraints="NO" id="tVK-ai-BIa">
+                            <rect key="frame" x="368" y="35" width="30" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="P5a-2o-0gk"/>
+                                <constraint firstAttribute="width" constant="30" id="f9g-Nk-qcO"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remove" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="ezl-u1-yoX" customClass="MyLabel" customModule="PassengerApp" customModuleProvider="target">
+                            <rect key="frame" x="346" y="39.5" width="40" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="70E-lk-p2Z"/>
+                                <constraint firstAttribute="width" constant="40" id="uJn-Hf-6DH"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.078431372549019607" green="0.078431372549019607" blue="0.078431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="fontFamilyWeight" value="Medium"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="75h-RG-3Au" customClass="MyLabel" customModule="PassengerApp" customModuleProvider="target">
+                            <rect key="frame" x="80" y="30.5" width="261" height="17"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.078431372549019607" green="0.078431372549019607" blue="0.078431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="fontFamilyWeight" value="Medium"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Yxp-bB-VCT">
+                            <rect key="frame" x="10" y="20" width="60" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="ZSL-iA-gwR"/>
+                                <constraint firstAttribute="height" constant="60" id="eI6-sc-h4g"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="8hj-9Y-Mcd" customClass="MyLabel" customModule="PassengerApp" customModuleProvider="target">
+                            <rect key="frame" x="80" y="63.5" width="0.0" height="0.0"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.078431372549019607" green="0.078431372549019607" blue="0.078431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="fontFamilyWeight" value="Regular"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Lpb-iK-uvT" customClass="MyLabel" customModule="PassengerApp" customModuleProvider="target">
+                            <rect key="frame" x="80" y="62.5" width="311" height="18"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.078431372549019607" green="0.078431372549019607" blue="0.078431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="fontFamilyWeight" value="Semibold"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isAppThemeFont" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="5xX-4j-5u6" secondAttribute="trailing" id="5ai-2p-tNK"/>
+                        <constraint firstItem="5xX-4j-5u6" firstAttribute="leading" secondItem="ezl-u1-yoX" secondAttribute="trailing" constant="15" id="62i-B4-Kh8"/>
+                        <constraint firstItem="8hj-9Y-Mcd" firstAttribute="top" secondItem="75h-RG-3Au" secondAttribute="bottom" constant="16" id="Pnr-pm-k1A"/>
+                        <constraint firstItem="5xX-4j-5u6" firstAttribute="leading" secondItem="Lpb-iK-uvT" secondAttribute="trailing" constant="10" id="aOi-nd-ihz"/>
+                        <constraint firstItem="75h-RG-3Au" firstAttribute="centerY" secondItem="bib-GC-eRi" secondAttribute="centerY" constant="-11" id="aQp-ge-PTv"/>
+                        <constraint firstItem="Yxp-bB-VCT" firstAttribute="centerY" secondItem="bib-GC-eRi" secondAttribute="centerY" id="ceu-Tg-LUH"/>
+                        <constraint firstItem="8hj-9Y-Mcd" firstAttribute="leading" secondItem="Yxp-bB-VCT" secondAttribute="trailing" constant="10" id="dym-ND-Dnn"/>
+                        <constraint firstItem="tVK-ai-BIa" firstAttribute="centerY" secondItem="bib-GC-eRi" secondAttribute="centerY" id="grm-Vp-adt"/>
+                        <constraint firstItem="5xX-4j-5u6" firstAttribute="top" secondItem="bib-GC-eRi" secondAttribute="top" id="ivK-YF-Oig"/>
+                        <constraint firstItem="ezl-u1-yoX" firstAttribute="leading" secondItem="75h-RG-3Au" secondAttribute="trailing" constant="5" id="lyS-TV-mog"/>
+                        <constraint firstItem="75h-RG-3Au" firstAttribute="leading" secondItem="Yxp-bB-VCT" secondAttribute="trailing" constant="10" id="m0X-31-Bjj"/>
+                        <constraint firstItem="Lpb-iK-uvT" firstAttribute="top" secondItem="75h-RG-3Au" secondAttribute="bottom" constant="15" id="otX-Zs-gBL"/>
+                        <constraint firstItem="Yxp-bB-VCT" firstAttribute="leading" secondItem="bib-GC-eRi" secondAttribute="leading" constant="10" id="pvN-Gf-fTu"/>
+                        <constraint firstItem="ezl-u1-yoX" firstAttribute="centerY" secondItem="bib-GC-eRi" secondAttribute="centerY" id="s8b-XL-oQd"/>
+                        <constraint firstAttribute="trailing" secondItem="tVK-ai-BIa" secondAttribute="trailing" constant="3" id="w6D-M2-odw"/>
+                        <constraint firstAttribute="bottom" secondItem="5xX-4j-5u6" secondAttribute="bottom" id="was-j6-o6m"/>
+                        <constraint firstItem="Lpb-iK-uvT" firstAttribute="leading" secondItem="8hj-9Y-Mcd" secondAttribute="trailing" id="zRA-ha-XdM"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="bib-GC-eRi" secondAttribute="bottom" constant="10" id="Don-ck-iGx"/>
+                <constraint firstItem="bib-GC-eRi" firstAttribute="top" secondItem="mDC-Zl-rdo" secondAttribute="top" id="Hhk-WL-5hk"/>
+                <constraint firstItem="bib-GC-eRi" firstAttribute="leading" secondItem="mDC-Zl-rdo" secondAttribute="leading" id="c94-xX-M7J"/>
+                <constraint firstAttribute="trailing" secondItem="bib-GC-eRi" secondAttribute="trailing" id="xzz-nV-8zC"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-213.768115942029" y="-45.535714285714285"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_cancel_forgotpass" width="25" height="25"/>
+        <image name="ic_right_shape" width="300" height="300"/>
+    </resources>
+</document>

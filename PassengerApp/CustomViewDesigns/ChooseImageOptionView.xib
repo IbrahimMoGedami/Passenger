@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="215"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" tag="16" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="pCd-j4-J8H">
+                    <rect key="frame" x="57.5" y="10" width="260" height="120"/>
+                    <subviews>
+                        <view tag="100" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pjh-TG-aVJ">
+                            <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_chooseimg_camera" translatesAutoresizingMaskIntoConstraints="NO" id="pDi-aC-AiR">
+                                    <rect key="frame" x="45" y="30" width="30" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="30" id="B7B-U7-hhE"/>
+                                        <constraint firstAttribute="height" constant="30" id="hJ1-lN-97Q"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8vS-3Y-Fad" customClass="MyLabel" customModule="PassengerApp" customModuleProvider="target">
+                                    <rect key="frame" x="42.5" y="65" width="35.5" height="20.5"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="20.5" id="Pmn-85-9tM"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="8vS-3Y-Fad" firstAttribute="top" secondItem="pDi-aC-AiR" secondAttribute="bottom" constant="5" id="9pV-oV-qx6"/>
+                                <constraint firstItem="8vS-3Y-Fad" firstAttribute="centerX" secondItem="pjh-TG-aVJ" secondAttribute="centerX" id="AGX-K8-bj3"/>
+                                <constraint firstAttribute="width" secondItem="pjh-TG-aVJ" secondAttribute="height" multiplier="1:1" id="bZH-wJ-iQZ"/>
+                                <constraint firstItem="pDi-aC-AiR" firstAttribute="centerX" secondItem="pjh-TG-aVJ" secondAttribute="centerX" id="lxU-EV-SGX"/>
+                                <constraint firstItem="pDi-aC-AiR" firstAttribute="top" secondItem="pjh-TG-aVJ" secondAttribute="top" constant="30" id="vEj-Nb-Agr"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view tag="200" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="87v-SB-AFp">
+                            <rect key="frame" x="140" y="0.0" width="120" height="120"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_chooseimg_gallery" translatesAutoresizingMaskIntoConstraints="NO" id="duP-Iw-ooI">
+                                    <rect key="frame" x="45" y="30" width="30" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="BtS-mJ-Fbh"/>
+                                        <constraint firstAttribute="width" constant="30" id="Gfc-qR-Ack"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UG0-fD-CNt" customClass="MyLabel" customModule="PassengerApp" customModuleProvider="target">
+                                    <rect key="frame" x="42.5" y="65" width="35.5" height="20.5"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="20.5" id="W2H-je-Imi"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="UG0-fD-CNt" firstAttribute="centerX" secondItem="87v-SB-AFp" secondAttribute="centerX" id="7rI-xU-8p1"/>
+                                <constraint firstItem="UG0-fD-CNt" firstAttribute="top" secondItem="duP-Iw-ooI" secondAttribute="bottom" constant="5" id="Eh2-WV-Ntg"/>
+                                <constraint firstItem="duP-Iw-ooI" firstAttribute="top" secondItem="87v-SB-AFp" secondAttribute="top" constant="30" id="TK6-nR-hxk"/>
+                                <constraint firstItem="duP-Iw-ooI" firstAttribute="centerX" secondItem="87v-SB-AFp" secondAttribute="centerX" id="WLd-9d-sd0"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" identifier="StackHeight" id="Dm0-rK-rbX"/>
+                    </constraints>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BVj-9N-b4Q" customClass="MyButton" customModule="PassengerApp" customModuleProvider="target">
+                    <rect key="frame" x="30" y="145" width="315" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="U78-30-S7t"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isAppTheme" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="BVj-9N-b4Q" secondAttribute="trailing" constant="30" id="Isi-tW-fQj"/>
+                <constraint firstItem="BVj-9N-b4Q" firstAttribute="top" secondItem="pCd-j4-J8H" secondAttribute="bottom" constant="15" id="YdI-WG-5QW"/>
+                <constraint firstItem="pCd-j4-J8H" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="jmq-fb-bsB"/>
+                <constraint firstAttribute="bottom" secondItem="BVj-9N-b4Q" secondAttribute="bottom" constant="20" id="o5k-n7-3gh"/>
+                <constraint firstItem="BVj-9N-b4Q" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="oWM-Kg-fhc"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="23.199999999999999" y="63.418290854572717"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_chooseimg_camera" width="35" height="35"/>
+        <image name="ic_chooseimg_gallery" width="35" height="35"/>
+    </resources>
+</document>

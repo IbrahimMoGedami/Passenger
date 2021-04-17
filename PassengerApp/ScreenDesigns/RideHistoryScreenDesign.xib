@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RideHistoryUV" customModule="PassengerApp" customModuleProvider="target">
+            <connections>
+                <outlet property="filterContainerView" destination="ZFb-bg-bSZ" id="5vp-bN-1tT"/>
+                <outlet property="filterDownImgView" destination="9XC-ug-hjR" id="TaO-Kq-6aJ"/>
+                <outlet property="filterHLbl" destination="fml-FU-7rq" id="ZOx-I4-iDQ"/>
+                <outlet property="tableView" destination="uMd-yx-45k" id="x5k-lx-0yo"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZFb-bg-bSZ">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="48"/>
+                    <subviews>
+                        <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ALL" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fml-FU-7rq" customClass="MyLabel" customModule="PassengerApp" customModuleProvider="target">
+                            <rect key="frame" x="285" y="10" width="26.5" height="28"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="fontFamilyWeight" value="Medium"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9XC-ug-hjR">
+                            <rect key="frame" x="317.5" y="11.5" width="25" height="25"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="8WN-hp-Rfu"/>
+                                <constraint firstAttribute="width" constant="25" id="Whs-48-wFN"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="fml-FU-7rq" secondAttribute="bottom" constant="10" id="JbI-CU-FdR"/>
+                        <constraint firstItem="9XC-ug-hjR" firstAttribute="centerY" secondItem="ZFb-bg-bSZ" secondAttribute="centerY" id="L7A-z1-XlE"/>
+                        <constraint firstItem="fml-FU-7rq" firstAttribute="top" secondItem="ZFb-bg-bSZ" secondAttribute="top" constant="10" id="ORA-8j-Peg"/>
+                        <constraint firstItem="9XC-ug-hjR" firstAttribute="leading" secondItem="fml-FU-7rq" secondAttribute="trailing" constant="6" id="cxi-HC-bPn"/>
+                        <constraint firstAttribute="trailing" secondItem="9XC-ug-hjR" secondAttribute="trailing" constant="32.5" id="dJV-hi-ngp"/>
+                        <constraint firstAttribute="height" constant="48" id="kFh-J4-JC1"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uMd-yx-45k">
+                    <rect key="frame" x="0.0" y="48" width="375" height="619"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="uMd-yx-45k" secondAttribute="trailing" id="1nY-vF-Xfz"/>
+                <constraint firstItem="uMd-yx-45k" firstAttribute="top" secondItem="ZFb-bg-bSZ" secondAttribute="bottom" id="9Up-FE-NRL"/>
+                <constraint firstAttribute="bottom" secondItem="uMd-yx-45k" secondAttribute="bottom" id="Ix9-ku-0vQ"/>
+                <constraint firstItem="ZFb-bg-bSZ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="QEV-Yd-81c"/>
+                <constraint firstAttribute="trailing" secondItem="ZFb-bg-bSZ" secondAttribute="trailing" id="k2b-cS-aTK"/>
+                <constraint firstItem="ZFb-bg-bSZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="mwu-4W-Rqj"/>
+                <constraint firstItem="uMd-yx-45k" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="pcx-yE-iCx"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+        </view>
+    </objects>
+</document>

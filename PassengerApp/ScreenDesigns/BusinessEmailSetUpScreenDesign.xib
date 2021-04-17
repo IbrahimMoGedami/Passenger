@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BusinessEmailSetUpUV" customModule="PassengerApp" customModuleProvider="target">
+            <connections>
+                <outlet property="emailTxtField" destination="xUc-Ej-8a4" id="rjz-Ms-R2H"/>
+                <outlet property="hLbl" destination="a8o-N5-IYa" id="o7l-gk-sMb"/>
+                <outlet property="nextBtn" destination="iGD-3n-bLF" id="Qds-l6-NLo"/>
+                <outlet property="skipBtn" destination="dXV-ah-Ycx" id="eT8-mN-ENw"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a8o-N5-IYa" customClass="MyLabel" customModule="PassengerApp" customModuleProvider="target">
+                    <rect key="frame" x="15" y="25" width="345" height="23"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xUc-Ej-8a4" customClass="MyTextField" customModule="PassengerApp" customModuleProvider="target">
+                    <rect key="frame" x="15" y="68" width="345" height="60"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="XTy-5T-wrH"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iGD-3n-bLF" customClass="MyButton" customModule="PassengerApp" customModuleProvider="target">
+                    <rect key="frame" x="194.5" y="602" width="165.5" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="9Rl-Co-14i"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isAppTheme" value="YES"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isAppTheme1" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dXV-ah-Ycx" customClass="MyButton" customModule="PassengerApp" customModuleProvider="target">
+                    <rect key="frame" x="15" y="602" width="165.5" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="u5q-1C-r0J"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isAppTheme" value="NO"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isAppTheme1" value="NO"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="dXV-ah-Ycx" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="5CA-yb-eVX"/>
+                <constraint firstItem="iGD-3n-bLF" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.5" constant="-22" id="7M4-cR-4R2"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="iGD-3n-bLF" secondAttribute="trailing" constant="15" id="Cje-d7-NFx"/>
+                <constraint firstItem="a8o-N5-IYa" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="G5R-Rg-9A2"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="dXV-ah-Ycx" secondAttribute="bottom" constant="15" id="LEW-ia-Cgc"/>
+                <constraint firstItem="xUc-Ej-8a4" firstAttribute="top" secondItem="a8o-N5-IYa" secondAttribute="bottom" constant="20" id="VUf-LN-nzS"/>
+                <constraint firstItem="xUc-Ej-8a4" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="hRe-Nr-WAC"/>
+                <constraint firstItem="a8o-N5-IYa" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="25" id="kci-ix-vQ7"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="a8o-N5-IYa" secondAttribute="trailing" constant="15" id="sFW-VJ-713"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="xUc-Ej-8a4" secondAttribute="trailing" constant="15" id="vxd-TA-e1W"/>
+                <constraint firstItem="dXV-ah-Ycx" firstAttribute="width" secondItem="iGD-3n-bLF" secondAttribute="width" id="wMF-OG-KHv"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="iGD-3n-bLF" secondAttribute="bottom" constant="15" id="zNc-67-PMB"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,50 @@
+//
+//  ExtUIImageView.swift
+//  PassengerApp
+//
+//  Created by ADMIN on 14/07/17.
+//  Copyright © 2017 V3Cube. All rights reserved.
+//
+
+import Foundation
+extension UIImageView{
+    func aspectToFitFrame() -> CGRect {
+        
+        guard let image = image else {
+            assertionFailure("No image found!")
+            return CGRect.zero
+        }
+        
+        let imageRatio: CGFloat = image.size.width / image.size.height
+        let viewRatio: CGFloat = frame.size.width / frame.size.height
+        
+        if imageRatio < viewRatio {
+            let scale: CGFloat = frame.size.height / image.size.height
+            let width: CGFloat = scale * image.size.width
+            let topLeftX: CGFloat = (frame.size.width - width) * 0.5
+            return CGRect(x: topLeftX, y: 0, width: width, height: frame.size.height)
+        } else {
+            let scale: CGFloat = frame.size.width / image.size.width
+            let height: CGFloat = scale * image.size.height
+            let topLeftY: CGFloat = (frame.size.height - height) * 0.5
+            return CGRect(x: 0, y: topLeftY, width: frame.size.width, height: height)
+        }
+    }
+    
+    func showActivityIndicator(_ style:UIActivityIndicatorView.Style){
+        self.sd_setShowActivityIndicatorView(true)
+        self.sd_setIndicatorStyle(style)
+    }
+    
+    func applyshadowWithCorner(containerView : UIView, cornerRadious : CGFloat){
+        containerView.clipsToBounds = false
+        containerView.layer.shadowColor = UIColor.gray.cgColor
+        containerView.layer.shadowOpacity = 1
+        containerView.layer.shadowOffset = CGSize.zero
+        containerView.layer.shadowRadius = 7
+        containerView.layer.cornerRadius = cornerRadious
+        containerView.layer.shadowPath = UIBezierPath(roundedRect: containerView.bounds, cornerRadius: cornerRadious).cgPath
+        self.clipsToBounds = true
+        self.layer.cornerRadius = cornerRadious
+    }
+}

@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RestaurantsListCell" id="M2M-KW-dxO" customClass="RestaurantsListCell" customModule="CubeGroceryX" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="438" height="220"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" clipsSubviews="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="M2M-KW-dxO" id="DXy-7M-dSg">
+                <rect key="frame" x="0.0" y="0.0" width="438" height="220"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mr7-mN-J5y">
+                        <rect key="frame" x="15" y="20" width="408" height="192"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sHa-ia-vRx">
+                                <rect key="frame" x="0.0" y="140" width="408" height="52"/>
+                                <subviews>
+                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$10 min order" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7cz-5T-mQZ" customClass="MarqueeLabel">
+                                        <rect key="frame" x="165" y="20" width="78.5" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="HXT-45-cW5"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_offer_dis" translatesAutoresizingMaskIntoConstraints="NO" id="c0Q-la-ev2">
+                                        <rect key="frame" x="137" y="20" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="OId-YE-yuk"/>
+                                            <constraint firstAttribute="height" constant="20" id="Xcv-x9-2CA"/>
+                                        </constraints>
+                                    </imageView>
+                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Ks-9I-3jL">
+                                        <rect key="frame" x="135.5" y="52" width="137.5" height="20"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ci4-OS-iKQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20" id="Nqx-3b-v1D"/>
+                                                    <constraint firstAttribute="width" constant="20" id="rYY-wu-do6"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Knight Food.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jlE-qg-KfY" customClass="MarqueeLabel">
+                                                <rect key="frame" x="25" y="1" width="112.5" height="18"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="fontFamilyWeight" value="Medium"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="jlE-qg-KfY" firstAttribute="top" secondItem="8Ks-9I-3jL" secondAttribute="top" constant="1" id="2Uf-Ja-XZ6"/>
+                                            <constraint firstItem="Ci4-OS-iKQ" firstAttribute="leading" secondItem="8Ks-9I-3jL" secondAttribute="leading" id="F3V-Th-O0R"/>
+                                            <constraint firstItem="jlE-qg-KfY" firstAttribute="leading" secondItem="Ci4-OS-iKQ" secondAttribute="trailing" constant="5" id="J59-6U-OJ5"/>
+                                            <constraint firstAttribute="height" constant="20" id="VN2-ml-fxB"/>
+                                            <constraint firstAttribute="trailing" secondItem="jlE-qg-KfY" secondAttribute="trailing" id="dsz-fJ-Sz5"/>
+                                            <constraint firstAttribute="bottom" secondItem="jlE-qg-KfY" secondAttribute="bottom" constant="1" id="jas-a5-3Dv"/>
+                                            <constraint firstItem="Ci4-OS-iKQ" firstAttribute="top" secondItem="8Ks-9I-3jL" secondAttribute="top" id="k35-9b-1bw"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.33742666244506836" green="0.65817046165466309" blue="0.19986170530319214" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="7cz-5T-mQZ" firstAttribute="top" secondItem="sHa-ia-vRx" secondAttribute="top" constant="20" id="8UU-Lg-Efn"/>
+                                    <constraint firstItem="8Ks-9I-3jL" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="sHa-ia-vRx" secondAttribute="leading" constant="10" id="8sm-kG-wzZ"/>
+                                    <constraint firstItem="7cz-5T-mQZ" firstAttribute="width" relation="lessThanOrEqual" secondItem="sHa-ia-vRx" secondAttribute="width" constant="-70" id="BDY-st-eUF"/>
+                                    <constraint firstItem="8Ks-9I-3jL" firstAttribute="top" secondItem="7cz-5T-mQZ" secondAttribute="bottom" constant="12" id="LYX-E8-Mgi"/>
+                                    <constraint firstItem="8Ks-9I-3jL" firstAttribute="centerX" secondItem="sHa-ia-vRx" secondAttribute="centerX" id="MwP-tO-B09"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="8Ks-9I-3jL" secondAttribute="trailing" constant="10" id="WHe-sz-Vr6"/>
+                                    <constraint firstItem="7cz-5T-mQZ" firstAttribute="leading" secondItem="c0Q-la-ev2" secondAttribute="trailing" constant="8" id="dhL-y3-Ud2"/>
+                                    <constraint firstItem="7cz-5T-mQZ" firstAttribute="centerX" secondItem="sHa-ia-vRx" secondAttribute="centerX" id="fYn-uD-GDj"/>
+                                    <constraint firstItem="c0Q-la-ev2" firstAttribute="centerY" secondItem="7cz-5T-mQZ" secondAttribute="centerY" id="go8-pj-enE"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_sample" translatesAutoresizingMaskIntoConstraints="NO" id="Azj-1W-Oio">
+                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="2fw-8s-1AR"/>
+                                    <constraint firstAttribute="width" constant="150" id="ESp-aP-4Pz"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$10 min order" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="v83-Ii-QaF" customClass="MyLabel" customModule="CubeGroceryX" customModuleProvider="target">
+                                <rect key="frame" x="10" y="0.0" width="353" height="0.0"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" id="s8L-WX-K5G"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.92941176470588238" green="0.16078431372549018" blue="0.22352941176470587" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontFamilyWeight" value="Medium"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xsc-wk-hG0">
+                                <rect key="frame" x="140" y="0.0" width="268" height="150"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Knight Food.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qf6-zq-PwN" customClass="MarqueeLabel">
+                                        <rect key="frame" x="15" y="15" width="213" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontFamilyWeight" value="Medium"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="South Indian" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="5kn-iE-YrQ" customClass="MyLabel" customModule="CubeGroceryX" customModuleProvider="target">
+                                        <rect key="frame" x="182" y="97.5" width="76" height="18"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="18" id="2kv-3C-VAk"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontFamilyWeight" value="Medium"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_ufxLoc" translatesAutoresizingMaskIntoConstraints="NO" id="RPT-fL-cCc">
+                                        <rect key="frame" x="10" y="107.5" width="18" height="18"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="18" id="fVb-jS-hTy"/>
+                                            <constraint firstAttribute="width" constant="18" id="vPD-j4-UFB"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="South Indian" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z6I-gv-Gdb" customClass="MyLabel" customModule="CubeGroceryX" customModuleProvider="target">
+                                        <rect key="frame" x="15" y="39" width="243" height="14.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="14.5" id="NvG-Q3-rxK"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" red="0.2156862745" green="0.2156862745" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontFamilyWeight" value="Regular"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="price per person" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iXa-KS-lFb" customClass="MyLabel" customModule="CubeGroceryX" customModuleProvider="target">
+                                        <rect key="frame" x="15" y="57" width="243" height="15"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="35" id="tTD-Mk-S4f"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" red="0.2156862745" green="0.2156862745" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontFamilyWeight" value="Regular"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rq0-Hm-5Dp">
+                                        <rect key="frame" x="0.0" y="81.5" width="268" height="1"/>
+                                        <color key="backgroundColor" red="0.85816415061599871" green="0.85816415061599871" blue="0.85816415061599871" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="6iT-wa-h8X"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$10 min order" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9so-FX-hPL" customClass="MyLabel" customModule="CubeGroceryX" customModuleProvider="target">
+                                        <rect key="frame" x="179.5" y="120.5" width="78.5" height="14.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" red="0.39215686274509803" green="0.39215686274509803" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontFamilyWeight" value="Regular"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="55 mins" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ox-lw-sVP" customClass="MyLabel" customModule="CubeGroceryX" customModuleProvider="target">
+                                        <rect key="frame" x="33" y="120.5" width="45" height="14.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" red="0.39215686274509803" green="0.39215686274509803" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="55 mins" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j3U-61-Hkg" customClass="MyLabel" customModule="CubeGroceryX" customModuleProvider="target">
+                                        <rect key="frame" x="33" y="97.5" width="55" height="16"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="55" id="vNq-xr-UO9"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.078431372549019607" green="0.078431372549019607" blue="0.078431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontFamilyWeight" value="Medium"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="9so-FX-hPL" firstAttribute="top" secondItem="5kn-iE-YrQ" secondAttribute="bottom" constant="5" id="0YA-jp-dkC"/>
+                                    <constraint firstItem="RPT-fL-cCc" firstAttribute="top" secondItem="j3U-61-Hkg" secondAttribute="top" constant="10" id="3g0-e3-fVe"/>
+                                    <constraint firstItem="Qf6-zq-PwN" firstAttribute="leading" secondItem="Xsc-wk-hG0" secondAttribute="leading" constant="15" id="Er0-TK-wN6"/>
+                                    <constraint firstItem="Rq0-Hm-5Dp" firstAttribute="leading" secondItem="Xsc-wk-hG0" secondAttribute="leading" id="FcE-A9-MQC"/>
+                                    <constraint firstItem="j3U-61-Hkg" firstAttribute="leading" secondItem="RPT-fL-cCc" secondAttribute="trailing" constant="5" id="Mjh-Fk-m4I"/>
+                                    <constraint firstAttribute="trailing" secondItem="5kn-iE-YrQ" secondAttribute="trailing" constant="10" id="Nmw-3k-ixw"/>
+                                    <constraint firstItem="Z6I-gv-Gdb" firstAttribute="leading" secondItem="Qf6-zq-PwN" secondAttribute="leading" id="Qqe-8B-a6w"/>
+                                    <constraint firstItem="j3U-61-Hkg" firstAttribute="top" secondItem="5kn-iE-YrQ" secondAttribute="top" id="Rbj-dK-zkz"/>
+                                    <constraint firstAttribute="trailing" secondItem="Z6I-gv-Gdb" secondAttribute="trailing" constant="10" id="XMi-Iw-VXC"/>
+                                    <constraint firstItem="5kn-iE-YrQ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="j3U-61-Hkg" secondAttribute="trailing" constant="3" id="Y9v-dU-tRN"/>
+                                    <constraint firstItem="iXa-KS-lFb" firstAttribute="leading" secondItem="Z6I-gv-Gdb" secondAttribute="leading" id="YqE-fD-neJ"/>
+                                    <constraint firstItem="iXa-KS-lFb" firstAttribute="top" secondItem="Z6I-gv-Gdb" secondAttribute="bottom" constant="3.5" id="c0h-Yk-mZ9"/>
+                                    <constraint firstAttribute="bottom" secondItem="3ox-lw-sVP" secondAttribute="bottom" constant="15" id="d1w-LL-tDD"/>
+                                    <constraint firstAttribute="trailing" secondItem="Rq0-Hm-5Dp" secondAttribute="trailing" id="hcZ-4L-YHz"/>
+                                    <constraint firstItem="3ox-lw-sVP" firstAttribute="top" secondItem="9so-FX-hPL" secondAttribute="top" id="j7M-nF-1kH"/>
+                                    <constraint firstItem="RPT-fL-cCc" firstAttribute="leading" secondItem="Xsc-wk-hG0" secondAttribute="leading" constant="10" id="k5D-Fl-gTy"/>
+                                    <constraint firstAttribute="trailing" secondItem="Qf6-zq-PwN" secondAttribute="trailing" constant="40" id="l3g-AJ-w4l"/>
+                                    <constraint firstItem="iXa-KS-lFb" firstAttribute="trailing" secondItem="Z6I-gv-Gdb" secondAttribute="trailing" id="lck-QR-FFW"/>
+                                    <constraint firstAttribute="height" constant="150" id="mMS-V3-RvM"/>
+                                    <constraint firstItem="Qf6-zq-PwN" firstAttribute="top" secondItem="Xsc-wk-hG0" secondAttribute="top" constant="15" id="moG-MM-TOP"/>
+                                    <constraint firstItem="3ox-lw-sVP" firstAttribute="leading" secondItem="j3U-61-Hkg" secondAttribute="leading" id="pnw-9C-92s"/>
+                                    <constraint firstItem="9so-FX-hPL" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="3ox-lw-sVP" secondAttribute="trailing" constant="3" id="sHW-Zf-GNH"/>
+                                    <constraint firstItem="Z6I-gv-Gdb" firstAttribute="top" secondItem="Qf6-zq-PwN" secondAttribute="bottom" constant="6" id="sPf-tc-slD"/>
+                                    <constraint firstItem="9so-FX-hPL" firstAttribute="trailing" secondItem="5kn-iE-YrQ" secondAttribute="trailing" id="twc-u1-l7r"/>
+                                    <constraint firstItem="j3U-61-Hkg" firstAttribute="top" secondItem="Rq0-Hm-5Dp" secondAttribute="bottom" constant="15" id="y5x-Ne-7m0"/>
+                                </constraints>
+                            </view>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_sel_favStore" translatesAutoresizingMaskIntoConstraints="NO" id="PIF-sH-don">
+                                <rect key="frame" x="115" y="5" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="5MG-kE-8qW"/>
+                                    <constraint firstAttribute="height" constant="20" id="Sdm-ln-sVN"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="sHa-ia-vRx" secondAttribute="bottom" id="CyW-mg-AHU"/>
+                            <constraint firstAttribute="trailing" secondItem="Xsc-wk-hG0" secondAttribute="trailing" id="D7O-nL-S6N"/>
+                            <constraint firstItem="v83-Ii-QaF" firstAttribute="leading" secondItem="mr7-mN-J5y" secondAttribute="leading" constant="10" id="Gab-cs-T4u"/>
+                            <constraint firstItem="sHa-ia-vRx" firstAttribute="leading" secondItem="mr7-mN-J5y" secondAttribute="leading" id="KfS-Pw-lwf"/>
+                            <constraint firstItem="PIF-sH-don" firstAttribute="top" secondItem="v83-Ii-QaF" secondAttribute="bottom" constant="5" id="Oa8-35-JiW"/>
+                            <constraint firstItem="sHa-ia-vRx" firstAttribute="top" secondItem="Azj-1W-Oio" secondAttribute="bottom" constant="-10" id="ciL-tv-yBa"/>
+                            <constraint firstItem="Xsc-wk-hG0" firstAttribute="leading" secondItem="mr7-mN-J5y" secondAttribute="leading" constant="140" id="cuq-jG-hDU"/>
+                            <constraint firstItem="Azj-1W-Oio" firstAttribute="top" secondItem="v83-Ii-QaF" secondAttribute="bottom" id="d9c-ka-WeV"/>
+                            <constraint firstItem="Xsc-wk-hG0" firstAttribute="leading" secondItem="PIF-sH-don" secondAttribute="trailing" constant="5" id="fKQ-uE-2nS"/>
+                            <constraint firstAttribute="trailing" secondItem="v83-Ii-QaF" secondAttribute="trailing" constant="45" id="hus-tl-iYu"/>
+                            <constraint firstItem="v83-Ii-QaF" firstAttribute="top" secondItem="mr7-mN-J5y" secondAttribute="top" id="kWk-jZ-Pzl"/>
+                            <constraint firstItem="Azj-1W-Oio" firstAttribute="leading" secondItem="mr7-mN-J5y" secondAttribute="leading" id="p7e-2F-PNP"/>
+                            <constraint firstAttribute="trailing" secondItem="sHa-ia-vRx" secondAttribute="trailing" id="uoe-XQ-tth"/>
+                            <constraint firstItem="Xsc-wk-hG0" firstAttribute="top" secondItem="v83-Ii-QaF" secondAttribute="bottom" id="zsB-aH-HRx"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" red="0.82179588866112807" green="0.82179588866112807" blue="0.82179588866112807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="0.20000000000000001"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="NO"/>
+                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                <size key="value" width="0.0" height="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q9v-PL-Mx2">
+                        <rect key="frame" x="383" y="7" width="45" height="28"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_filled_rating" translatesAutoresizingMaskIntoConstraints="NO" id="RwT-nx-v6x">
+                                <rect key="frame" x="5" y="9" width="10" height="10"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="10" id="8b6-Nk-oRa"/>
+                                    <constraint firstAttribute="height" constant="10" id="mGz-zX-awn"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wRa-Vv-irr" customClass="MyLabel" customModule="CubeGroceryX" customModuleProvider="target">
+                                <rect key="frame" x="17" y="7" width="26" height="14.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontFamilyWeight" value="Medium"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isAppThemeTextFont" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.48627450980392156" green="0.78431372549019607" blue="0.18823529411764706" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="wRa-Vv-irr" secondAttribute="trailing" constant="2" id="5I2-mO-qL4"/>
+                            <constraint firstItem="wRa-Vv-irr" firstAttribute="centerY" secondItem="Q9v-PL-Mx2" secondAttribute="centerY" id="Knb-wR-N15"/>
+                            <constraint firstAttribute="width" constant="45" id="L0D-FG-gTA"/>
+                            <constraint firstItem="RwT-nx-v6x" firstAttribute="leading" secondItem="Q9v-PL-Mx2" secondAttribute="leading" constant="5" id="Mlm-Nh-LaK"/>
+                            <constraint firstItem="wRa-Vv-irr" firstAttribute="leading" secondItem="RwT-nx-v6x" secondAttribute="trailing" constant="2" id="MsZ-dl-4M8"/>
+                            <constraint firstItem="RwT-nx-v6x" firstAttribute="centerY" secondItem="Q9v-PL-Mx2" secondAttribute="centerY" id="Pst-Sr-wxb"/>
+                            <constraint firstAttribute="height" constant="28" id="faO-Ml-fFU"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="mr7-mN-J5y" firstAttribute="top" secondItem="DXy-7M-dSg" secondAttribute="top" constant="20" id="2iR-6O-Q3z"/>
+                    <constraint firstAttribute="trailing" secondItem="mr7-mN-J5y" secondAttribute="trailing" constant="15" id="BQs-Ft-egj"/>
+                    <constraint firstAttribute="bottom" secondItem="mr7-mN-J5y" secondAttribute="bottom" constant="8" id="Iku-nE-DLd"/>
+                    <constraint firstItem="mr7-mN-J5y" firstAttribute="leading" secondItem="DXy-7M-dSg" secondAttribute="leading" constant="15" id="UH2-cf-Hf5"/>
+                    <constraint firstItem="Q9v-PL-Mx2" firstAttribute="top" secondItem="DXy-7M-dSg" secondAttribute="top" constant="7" id="f6U-ud-Mre"/>
+                    <constraint firstAttribute="trailing" secondItem="Q9v-PL-Mx2" secondAttribute="trailing" constant="10" id="tmq-83-Hjr"/>
+                </constraints>
+                <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                        <real key="value" value="0.20000000000000001"/>
+                    </userDefinedRuntimeAttribute>
+                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                        <real key="value" value="4"/>
+                    </userDefinedRuntimeAttribute>
+                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                        <real key="value" value="4"/>
+                    </userDefinedRuntimeAttribute>
+                    <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="NO"/>
+                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                        <color key="value" red="0.82179588869999998" green="0.82179588869999998" blue="0.82179588869999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </userDefinedRuntimeAttribute>
+                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                        <size key="value" width="0.0" height="0.0"/>
+                    </userDefinedRuntimeAttribute>
+                </userDefinedRuntimeAttributes>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.94509803921568625" green="0.94509803921568625" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="closeLblHeight" destination="s8L-WX-K5G" id="SLW-g8-cJD"/>
+                <outlet property="closedLbl" destination="v83-Ii-QaF" id="mLU-Q0-OSH"/>
+                <outlet property="containerView" destination="mr7-mN-J5y" id="9ZO-SF-nii"/>
+                <outlet property="detailsView" destination="Xsc-wk-hG0" id="jKO-DD-4Jj"/>
+                <outlet property="discountLbl" destination="7cz-5T-mQZ" id="0W1-wu-kZa"/>
+                <outlet property="discountView" destination="sHa-ia-vRx" id="imY-sR-Xwa"/>
+                <outlet property="favIconImgView" destination="PIF-sH-don" id="rtm-gq-CS7"/>
+                <outlet property="headerLbl" destination="Qf6-zq-PwN" id="cRx-l2-Ipj"/>
+                <outlet property="minOrderLbl" destination="9so-FX-hPL" id="emo-tA-FIA"/>
+                <outlet property="offerImgView" destination="c0Q-la-ev2" id="iJl-6x-FqC"/>
+                <outlet property="perPersonPriceLbl" destination="5kn-iE-YrQ" id="EeO-nS-A6I"/>
+                <outlet property="pricePerPersonLbl" destination="iXa-KS-lFb" id="X4v-TS-HYR"/>
+                <outlet property="ratingImgView" destination="RwT-nx-v6x" id="bT0-oD-KV8"/>
+                <outlet property="ratingLbl" destination="wRa-Vv-irr" id="GvC-ri-dMI"/>
+                <outlet property="ratingView" destination="Q9v-PL-Mx2" id="W9h-59-iWS"/>
+                <outlet property="restImgView" destination="Azj-1W-Oio" id="9Kl-H4-Gax"/>
+                <outlet property="subHeaderLbl" destination="Z6I-gv-Gdb" id="iTk-a4-iUM"/>
+                <outlet property="timeImgView" destination="RPT-fL-cCc" id="Jhl-hp-1Zk"/>
+                <outlet property="timeInfoLbl" destination="3ox-lw-sVP" id="0Am-XE-crD"/>
+                <outlet property="timeLbl" destination="j3U-61-Hkg" id="XuI-2I-p2f"/>
+                <outlet property="whoImgView" destination="Ci4-OS-iKQ" id="0an-dg-gUf"/>
+                <outlet property="whoLbl" destination="jlE-qg-KfY" id="Cq3-4T-AWA"/>
+                <outlet property="whoView" destination="8Ks-9I-3jL" id="qqN-yF-ynz"/>
+                <outlet property="whoViewHeight" destination="VN2-ml-fxB" id="SJS-MC-6Tr"/>
+            </connections>
+            <point key="canvasLocation" x="-331.19999999999999" y="2.6986506746626691"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_filled_rating" width="72" height="72"/>
+        <image name="ic_offer_dis" width="100" height="100"/>
+        <image name="ic_sample" width="960" height="640"/>
+        <image name="ic_sel_favStore" width="32" height="32"/>
+        <image name="ic_ufxLoc" width="60" height="60"/>
+    </resources>
+</document>

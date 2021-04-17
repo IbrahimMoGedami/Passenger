@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewDeliveryPreferencesUV" customModule="PassengerApp" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="t8a-Vi-wRG" id="rLo-1H-FIV"/>
+                <outlet property="viewImage" destination="275-Z9-6TH" id="kPZ-EC-rcG"/>
+                <outlet property="viewImageHeight" destination="zn1-uw-L2Q" id="TQp-o6-EGf"/>
+                <outlet property="viewImageLabel" destination="qe5-eR-1KC" id="GJf-jE-wZ5"/>
+                <outlet property="viewImageLabelHeight" destination="Txa-Ye-kM0" id="vdt-2E-G11"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qe5-eR-1KC" customClass="MyLabel" customModule="PassengerApp" customModuleProvider="target">
+                    <rect key="frame" x="36" y="15" width="303" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="Txa-Ye-kM0"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="fontFamilyWeight" value="Semibold"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="t8a-Vi-wRG">
+                    <rect key="frame" x="16" y="130" width="343" height="537"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </tableView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="275-Z9-6TH">
+                    <rect key="frame" x="125" y="15" width="125" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="125" id="SqC-3o-L93"/>
+                        <constraint firstAttribute="height" constant="100" id="zn1-uw-L2Q"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="qe5-eR-1KC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="12x-TL-9gV"/>
+                <constraint firstItem="t8a-Vi-wRG" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="343/375" id="F84-7O-FDc"/>
+                <constraint firstItem="qe5-eR-1KC" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="303/375" id="UxR-h5-Rcw"/>
+                <constraint firstItem="t8a-Vi-wRG" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="iEV-MS-VNy"/>
+                <constraint firstItem="qe5-eR-1KC" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="naa-6q-SZh"/>
+                <constraint firstItem="275-Z9-6TH" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="qFh-tG-48e"/>
+                <constraint firstItem="t8a-Vi-wRG" firstAttribute="top" secondItem="275-Z9-6TH" secondAttribute="bottom" constant="15" id="tc1-xd-pHP"/>
+                <constraint firstItem="275-Z9-6TH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="wqc-c3-31S"/>
+                <constraint firstAttribute="bottom" secondItem="t8a-Vi-wRG" secondAttribute="bottom" id="xo9-Q9-Xra"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="130.88455772113943"/>
+        </view>
+    </objects>
+</document>

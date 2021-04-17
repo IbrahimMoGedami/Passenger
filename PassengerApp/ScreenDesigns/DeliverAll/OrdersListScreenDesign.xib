@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OrdersListUV" customModule="PassengerApp" customModuleProvider="target">
+            <connections>
+                <outlet property="filterContainerView" destination="ezR-3N-3uS" id="MZa-2r-yrl"/>
+                <outlet property="filterDownImgView" destination="FVV-bV-DaI" id="whq-zk-ysE"/>
+                <outlet property="filterHLbl" destination="mqP-hw-dei" id="RXD-1Y-5lR"/>
+                <outlet property="tableView" destination="JRm-gu-w0S" id="uez-jl-hvs"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ezR-3N-3uS">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="48"/>
+                    <subviews>
+                        <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ALL" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mqP-hw-dei" customClass="MyLabel" customModule="PassengerApp" customModuleProvider="target">
+                            <rect key="frame" x="285" y="10" width="26.5" height="28"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="fontFamilyWeight" value="Medium"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FVV-bV-DaI">
+                            <rect key="frame" x="317.5" y="11.5" width="25" height="25"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="25" id="QEF-ZJ-Mek"/>
+                                <constraint firstAttribute="height" constant="25" id="eHd-3V-GfU"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="mqP-hw-dei" secondAttribute="bottom" constant="10" id="AAs-Ya-uaS"/>
+                        <constraint firstItem="FVV-bV-DaI" firstAttribute="centerY" secondItem="ezR-3N-3uS" secondAttribute="centerY" id="Gbe-YD-lyt"/>
+                        <constraint firstAttribute="height" constant="48" id="KOv-Ad-shT"/>
+                        <constraint firstItem="FVV-bV-DaI" firstAttribute="leading" secondItem="mqP-hw-dei" secondAttribute="trailing" constant="6" id="Ysv-DM-KWD"/>
+                        <constraint firstAttribute="trailing" secondItem="FVV-bV-DaI" secondAttribute="trailing" constant="32.5" id="dRd-MK-sAa"/>
+                        <constraint firstItem="mqP-hw-dei" firstAttribute="top" secondItem="ezR-3N-3uS" secondAttribute="top" constant="10" id="s3V-aY-1zq"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JRm-gu-w0S">
+                    <rect key="frame" x="0.0" y="48" width="375" height="619"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="GV8-4w-yXB"/>
+                        <outlet property="delegate" destination="-1" id="atP-4v-gH1"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="JRm-gu-w0S" firstAttribute="top" secondItem="ezR-3N-3uS" secondAttribute="bottom" id="4WJ-Fv-jbw"/>
+                <constraint firstAttribute="bottom" secondItem="JRm-gu-w0S" secondAttribute="bottom" id="E2r-9f-xJ5"/>
+                <constraint firstAttribute="trailing" secondItem="JRm-gu-w0S" secondAttribute="trailing" id="Eis-Pt-kyw"/>
+                <constraint firstItem="ezR-3N-3uS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="cVJ-51-Tf7"/>
+                <constraint firstItem="ezR-3N-3uS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="hDZ-pS-iHy"/>
+                <constraint firstItem="JRm-gu-w0S" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="poX-wS-HcC"/>
+                <constraint firstAttribute="trailing" secondItem="ezR-3N-3uS" secondAttribute="trailing" id="xlI-h2-POm"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <point key="canvasLocation" x="25.5" y="51.5"/>
+        </view>
+    </objects>
+</document>
